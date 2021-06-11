@@ -23,6 +23,12 @@ public class BirdController : MonoBehaviour
 
 	public void Recruit()
 	{
+		if (IsRecruited)
+		{
+			return;
+		}
+
 		IsRecruited = true;
+		Debug.Log("Recruited Berson!");
 	}
 }

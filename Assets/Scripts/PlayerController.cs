@@ -44,13 +44,13 @@ public class PlayerController : MonoBehaviour
 
 		SquawkGfx.SetActive(true);
 
-		GameObject[] birds = GameObject.FindGameObjectsWithTag("Bird");
-		for (int i = 0; i < birds.Length; i++)
+		GameObject[] beople = GameObject.FindGameObjectsWithTag("Berson");
+		foreach (GameObject berson in beople)
 		{
-			float distance = Vector3.Distance(transform.position, birds[0].transform.position);
+			float distance = Vector3.Distance(transform.position, berson.transform.position);
 			if (distance <= SquawkRadius)
 			{
-				birds[0].GetComponent<BirdController>().Recruit();
+				berson.GetComponent<BirdController>().Recruit();
 			}
 		}
 
