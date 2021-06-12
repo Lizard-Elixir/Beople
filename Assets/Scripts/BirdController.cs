@@ -38,19 +38,19 @@ public class BirdController : MonoBehaviour
 		Debug.Log("Recruited Berson!");
 	}
 
-	void MoveTowardsPlayer() {
+	void MoveTowardsPlayer()
+	{
 		float dist = Vector3.Distance(player.transform.position, transform.position);
 		float step = speed * Time.deltaTime;
 
-        if (dist > playerBufferDistance) {
-		Vector3 playerPos = new Vector3(player.transform.position.x, player.transform.position.y, player.transform.position.z);
-		Vector3 newPos = Vector3.MoveTowards(transform.position, playerPos, step);
-		Vector3 moveVector = newPos - transform.position;
+		if (dist > playerBufferDistance)
+		{
+			Vector3 playerPos = new Vector3(player.transform.position.x, player.transform.position.y, player.transform.position.z);
+			Vector3 newPos = Vector3.MoveTowards(transform.position, playerPos, step);
+			Vector3 moveVector = newPos - transform.position;
 
-		characterController.Move(moveVector);
-
-		Quaternion lookRotation = Quaternion.LookRotation(moveVector);
-		transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, step);
-        }
-    }
+			characterController.Move(moveVector);
+			transform.LookAt(playerPos);
+		}
+	}
 }
