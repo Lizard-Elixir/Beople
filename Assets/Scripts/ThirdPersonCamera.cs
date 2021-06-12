@@ -6,7 +6,7 @@ public class ThirdPersonCamera : MonoBehaviour
 {
 	public Transform target;
 
-	private Vector3 offset;
+	[SerializeField] private Vector3 offset;
 
 	void Start()
 	{
@@ -15,7 +15,7 @@ public class ThirdPersonCamera : MonoBehaviour
 
 	void LateUpdate()
 	{
-		transform.LookAt(target);
+		//transform.LookAt(target);
 		transform.position = target.position + offset;
 	}
 }
