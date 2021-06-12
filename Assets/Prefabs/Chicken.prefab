@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4217522848954397997}
   - component: {fileID: -1687191922748646160}
   - component: {fileID: 5545315818919297374}
+  - component: {fileID: 6492906297506588068}
   m_Layer: 0
   m_Name: Chicken
   m_TagString: Berson
@@ -68,6 +69,25 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!95 &6492906297506588068
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5421591520982284417}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7f821151191b2a7489b5c3bb72f3e83f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &8597187419404964772
 GameObject:
   m_ObjectHideFlags: 0
@@ -95,7 +115,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8597187419404964772}
-  m_LocalRotation: {x: -0.16274357, y: 0, z: -0, w: -0.9866684}
+  m_LocalRotation: {x: -0.16734308, y: 0, z: -0, w: -0.98589873}
   m_LocalPosition: {x: 0, y: 1.8, z: 0}
   m_LocalScale: {x: 1.2, y: 1.8, z: 1.2}
   m_Children: []
