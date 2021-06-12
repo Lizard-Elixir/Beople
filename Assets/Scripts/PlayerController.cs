@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-	public float SquawkRadius = 35f;
-	public float SquawkCooldown = 2;
+	public float SquawkRadius = 12.5f;
+	public float SquawkCooldown = 2f;
 
 	private GameObject SquawkGfx;
 	private float LastSquawkTime;
@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
 	void Start()
 	{
 		SquawkGfx = GameObject.Find("Squawk");
+		SquawkGfx.transform.localScale = new Vector3(SquawkRadius * 2, SquawkGfx.transform.localScale.y, SquawkRadius * 2);
 		SquawkGfx.SetActive(false);
 	}
 
