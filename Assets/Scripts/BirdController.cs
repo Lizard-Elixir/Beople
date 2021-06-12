@@ -5,9 +5,9 @@ using UnityEngine;
 public class BirdController : MonoBehaviour
 {
 	CharacterController characterController;
-	private GameObject player;
+	public GameObject player;
 
-	private bool IsRecruited = false;
+	public bool IsRecruited = false;
 	[SerializeField] private float speed = 5.0f;
 	[SerializeField] private double playerBufferDistance = 3.0;
 
@@ -44,7 +44,7 @@ public class BirdController : MonoBehaviour
 		return true;
 	}
 
-	void MoveTowardsPlayer()
+	public void MoveTowardsPlayer()
 	{
 		float dist = Vector3.Distance(player.transform.position, transform.position);
 		float step = speed * Time.deltaTime;

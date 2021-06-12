@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour
 {
 	public float SquawkRadius = 12.5f;
 	public float SquawkCooldown = 2f;
+	public bool Talking = false;
 
 	private GameObject SquawkGfx;
 	private float LastSquawkTime;
@@ -27,7 +28,7 @@ public class PlayerController : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
-		if (Input.GetButton("Fire1"))
+		if (Input.GetButton("Fire1") && !Talking)
 		{
 			Squawk();
 		}
@@ -83,5 +84,10 @@ public class PlayerController : MonoBehaviour
 				SetSquawkRadius(SquawkRadius *= 1.5f);
 				break;
 		}
+	}
+
+	public void SetTalking(bool isTalkingNow)
+	{
+		Talking = isTalkingNow;
 	}
 }
