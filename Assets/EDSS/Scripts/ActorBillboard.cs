@@ -22,6 +22,8 @@ namespace EightDirectionalSpriteSystem
 
 		public BeforeRenderBillboardEvent beforeRenderBillboardEvent;
 
+
+
 		public bool IsPlaying
 		{
 			get { return isPlaying; }

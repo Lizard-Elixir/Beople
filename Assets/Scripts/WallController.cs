@@ -7,6 +7,7 @@ public class WallController : MonoBehaviour
     [SerializeField] float beopleRequirement = 5f;
     [SerializeField] private VarObject recruitedBeopleVar;
     [SerializeField] private TextMeshProUGUI requirementHUD;
+    [SerializeField] private GameObject breakParticles;
 
     private void Start()
     {

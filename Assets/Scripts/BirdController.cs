@@ -12,7 +12,7 @@ public class BirdController : MonoBehaviour
 	[SerializeField] private double playerBufferDistance = 3.0;
 
 	[SerializeField] private VarObject recruitedBeopleVar;
-
+	[SerializeField] ParticleSystem collectParticles;
 
 	void Awake() => characterController = GetComponent<CharacterController>();
 
@@ -39,6 +39,7 @@ public class BirdController : MonoBehaviour
 
 		IsRecruited = true;
 		recruitedBeopleVar.currentNum += 1;
+		collectParticles.Play();
 		Debug.Log("Recruited Berson!");
 		Debug.Log(recruitedBeopleVar.currentNum);
 		return true;

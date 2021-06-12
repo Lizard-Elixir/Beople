@@ -37,7 +37,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 1.1, y: 4.29}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &2991752430706996138
 Canvas:
@@ -211,6 +211,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   beopleRequirement: 25
   recruitedBeopleVar: {fileID: 11400000, guid: 5520c82a3d0807a47ae5bfb8b2ed0d60, type: 2}
+  requirementHUD: {fileID: 8947704763378473720}
+  breakParticles: {fileID: 784898550751831477, guid: c516646e55061a84aa5ac21ef92712a4, type: 3}
 --- !u!1 &6478141298264985663
 GameObject:
   m_ObjectHideFlags: 0
