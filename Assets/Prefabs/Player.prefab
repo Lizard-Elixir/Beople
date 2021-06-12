@@ -39,7 +39,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7511297806933570520}
-  - component: {fileID: 7511297806933570521}
   - component: {fileID: 2548625093102466172}
   - component: {fileID: 295875141122373696}
   - component: {fileID: 1115558936372115991}
@@ -57,27 +56,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7511297806933570527}
-  m_LocalRotation: {x: -0.56279814, y: 0, z: -0, w: -0.8265944}
+  m_LocalRotation: {x: -0.11954727, y: 0, z: -0, w: -0.99282855}
   m_LocalPosition: {x: 0, y: 1.8, z: 0}
   m_LocalScale: {x: 1.2, y: 1.8, z: 1.2}
   m_Children: []
   m_Father: {fileID: 7511297808730203070}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!136 &7511297806933570521
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7511297806933570527}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!212 &2548625093102466172
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -118,7 +103,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 248f07df39f8a9342a6e17d0e7e99dec, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 85d846c4db8f08a4087be1bdb20b6f0f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -288,13 +273,13 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 2
+  m_Height: 4
   m_Radius: 0.5
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 2, z: 0}
 --- !u!114 &7511297808730203068
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -323,3 +308,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SquawkRadius: 12.5
   SquawkCooldown: 2
+  recruitedBeopleVar: {fileID: 0}
