@@ -8,4 +8,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Main.unity
     guid: b1586f7d84f4727448082342bf3d76fb
+    path: Assets/Scenes/Lange's Work Scene.unity
+    guid: cfe04c49bd4359a4eb0fb8b23b1c39d1
   m_configObjects: {}

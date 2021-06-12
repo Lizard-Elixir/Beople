@@ -30,11 +30,11 @@ public class BirdController : MonoBehaviour
 		}
 	}
 
-	public void Recruit()
+	public bool Recruit()
 	{
 		if (IsRecruited)
 		{
-			return;
+			return false;
 		}
 
 		IsRecruited = true;
