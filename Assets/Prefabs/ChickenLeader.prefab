@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8315338116869718479}
   - component: {fileID: -7259496706531224245}
+  - component: {fileID: 6314379894251406945}
   m_Layer: 0
   m_Name: ChickenLeader
   m_TagString: Berson
@@ -51,6 +52,52 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 2, z: 0}
+--- !u!114 &6314379894251406945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 206314118647843939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6c8a989b78d32c4681244bd62f1cbee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  IsRecruited: 0
+  speed: 10
+  playerBufferDistance: 3
+  recruitedBeopleVar: {fileID: 11400000, guid: 5520c82a3d0807a47ae5bfb8b2ed0d60, type: 2}
+  collectParticles: {fileID: 180527446336180318}
+  leader: {fileID: 0}
+  dialogue:
+    name: Cluckster
+    sentences:
+    - isPlayer: 0
+      portrait: {fileID: 21300000, guid: 1ded973b6cc931d4ca87d9c22a48fd01, type: 3}
+      message: 'Wayul howdy thayure pardner, whut can hawmble ol'' cluckster do fer
+        ya?        '
+    - isPlayer: 1
+      portrait: {fileID: 21300000, guid: fa51bd8e12f2ea440a98a5b6dc2297cb, type: 3}
+      message: I.. uhhh.. sorry? What was that?
+    - isPlayer: 0
+      portrait: {fileID: 21300000, guid: 42cc748d749f0c84bb94a00f12870bb5, type: 3}
+      message: 'Whut? Kayn''t yawl understaynd whut ahm sayun''? Ahm speakin'' plain
+        bird, sunneh!        '
+    - isPlayer: 1
+      portrait: {fileID: 21300000, guid: db32eb6450888e149972e67ac35ea7f2, type: 3}
+      message: Ah, I'm sorry, I think there's some sort of language barrier here.
+        Sorry to bother you!
+    - isPlayer: 0
+      portrait: {fileID: 21300000, guid: 662b440454f8d904186b18b933d22c32, type: 3}
+      message: "... whutschur problem, kid?        \r\n"
+    - isPlayer: 1
+      portrait: {fileID: 21300000, guid: 8fb6fae84dac3814cb8630dba3eaa3e4, type: 3}
+      message: Uh, okay well I'll be on my way. Bye!
+    - isPlayer: 0
+      portrait: {fileID: 21300000, guid: 662b440454f8d904186b18b933d22c32, type: 3}
+      message: 'Eyyy! Whayer yawl goin''?? Git back hare! '
 --- !u!1 &4516825867596015430
 GameObject:
   m_ObjectHideFlags: 0
@@ -226,5 +273,10 @@ PrefabInstance:
 --- !u!4 &5456297529162577069 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5259037748060441082, guid: 9b9d3a7e600c24b4b9baf61cff0328cc, type: 3}
+  m_PrefabInstance: {fileID: 235158351364816215}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &180527446336180318 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 126715999742553353, guid: 9b9d3a7e600c24b4b9baf61cff0328cc, type: 3}
   m_PrefabInstance: {fileID: 235158351364816215}
   m_PrefabAsset: {fileID: 0}
