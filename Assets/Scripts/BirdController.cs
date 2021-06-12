@@ -41,6 +41,7 @@ public class BirdController : MonoBehaviour
 		recruitedBeopleVar.currentNum += 1;
 		Debug.Log("Recruited Berson!");
 		Debug.Log(recruitedBeopleVar.currentNum);
+		return true;
 	}
 
 	void MoveTowardsPlayer()
