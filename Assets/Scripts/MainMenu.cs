@@ -5,6 +5,18 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+	public GameObject IntroExposition;
+
+	public void Start()
+	{
+		IntroExposition.SetActive(false);
+	}
+
+	public void ShowIntroExposition()
+	{
+		IntroExposition.SetActive(true);
+	}
+
 	public void PlayGame()
 	{
 		SceneManager.LoadScene("Main");
