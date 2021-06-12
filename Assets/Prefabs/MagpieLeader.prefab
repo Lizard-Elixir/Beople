@@ -9,8 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3469837672486610338}
-  - component: {fileID: 1521119622293394441}
   - component: {fileID: 6341142193545851174}
+  - component: {fileID: 907510874844850229}
   m_Layer: 0
   m_Name: MagpieLeader
   m_TagString: Berson
@@ -68,6 +68,25 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &907510874844850229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4728124945425180686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6c8a989b78d32c4681244bd62f1cbee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsRecruited: 0
+  speed: 5
+  playerBufferDistance: 3
+  recruitedBeopleVar: {fileID: 0}
+  dialogue:
+    name: 
+    sentences: []
 --- !u!1 &9074656755694633771
 GameObject:
   m_ObjectHideFlags: 0
