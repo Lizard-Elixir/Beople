@@ -40,6 +40,13 @@ public class BirdController : MonoBehaviour
 		IsRecruited = true;
 		recruitedBeopleVar.currentNum += 1;
 		collectParticles.Play();
+
+		// Allow the player to pass through recruited beople
+		GameObject player = GameObject.FindGameObjectWithTag("Player");
+		Collider playerCollider = player.GetComponent<Collider>();
+		Collider bersonCollider = GetComponent<Collider>();
+		Physics.IgnoreCollision(bersonCollider, playerCollider);
+
 		Debug.Log("Recruited Berson!");
 		Debug.Log(recruitedBeopleVar.currentNum);
 		return true;
