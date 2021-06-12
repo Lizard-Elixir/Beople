@@ -51,6 +51,7 @@ public class PlayerController : MonoBehaviour
 		}
 
 		SquawkGfx.SetActive(true);
+		SquawkGfx.GetComponent<AudioSource>().Play();
 
 		GameObject[] beople = GameObject.FindGameObjectsWithTag("Berson");
 		foreach (GameObject berson in beople)

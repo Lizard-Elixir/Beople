@@ -12,8 +12,9 @@ public class DialogueManager : MonoBehaviour
 	private TextMeshProUGUI dialogueName;
 	private TextMeshProUGUI dialogueMessage;
 	private Image portrait;
+	private AudioThemeManager audioThemeManager;
 	private PlayerController playerController;
-	private BirdLeaderController birdTarget;
+	public BirdLeaderController birdTarget;
 
 	void Awake()
 	{
@@ -24,11 +25,12 @@ public class DialogueManager : MonoBehaviour
 	{
 		sentences = new Queue<Sentence>();
 		playerController = FindObjectOfType<PlayerController>();
+		audioThemeManager = FindObjectOfType<AudioThemeManager>();
 	}
 
 	void Update()
 	{
-		if (Input.GetKeyDown(KeyCode.Return)) {
+		if (!!birdTarget && Input.GetKeyDown(KeyCode.Return)) {
 			DisplayNextSentence();   
 		}
 	}
@@ -51,6 +53,8 @@ public class DialogueManager : MonoBehaviour
 
 		ShowDialoague();
 		DisplayNextSentence();
+
+		audioThemeManager.PlayConversationTheme(birdLeader.name);
 	}
 
 	void DisplayNextSentence()
@@ -70,12 +74,10 @@ public class DialogueManager : MonoBehaviour
 
 	void EndDialogue()
 	{
-		dialogueMessage.text = "";
-		dialogueName.text= "";
-		portrait.sprite = null;
+		birdTarget.Recruit();
+		audioThemeManager.PlayMainTheme();
 		HideDialogue();
 		playerController.SetTalking(false);
-		birdTarget.Recruit();
 		birdTarget = null;
 	}
 
