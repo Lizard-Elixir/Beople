@@ -215,7 +215,8 @@ namespace EightDirectionalSpriteSystem
                  * but with a constant, fixed rotation.
                  */
 				// myTransform.rotation = billboardRotation;
-				myTransform.rotation = Quaternion.Euler(0f, 0f, 0f);
+				myTransform.LookAt(Camera.current.transform.position);
+				myTransform.rotation = Quaternion.Euler(-myTransform.rotation.eulerAngles.x, 0f, 0f);
 			}
 		}
 
