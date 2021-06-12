@@ -177,6 +177,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   playerBufferDistance: 3
+  recruitedBeopleVar: {fileID: 11400000, guid: 5520c82a3d0807a47ae5bfb8b2ed0d60, type: 2}
 --- !u!143 &4384227099934163899
 CharacterController:
   m_ObjectHideFlags: 0

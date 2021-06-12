@@ -11,6 +11,9 @@ public class BirdController : MonoBehaviour
 	[SerializeField] private float speed = 5.0f;
 	[SerializeField] private double playerBufferDistance = 3.0;
 
+	[SerializeField] private VarObject recruitedBeopleVar;
+
+
 	void Awake() => characterController = GetComponent<CharacterController>();
 
 	void Start()
@@ -35,7 +38,9 @@ public class BirdController : MonoBehaviour
 		}
 
 		IsRecruited = true;
+		recruitedBeopleVar.currentNum += 1;
 		Debug.Log("Recruited Berson!");
+		Debug.Log(recruitedBeopleVar.currentNum);
 	}
 
 	void MoveTowardsPlayer()

@@ -34,7 +34,7 @@ public class PlayerController : MonoBehaviour
 
 	/**
      * Checks within a radius for recruitable NPCs.
-     * Then, calls a `.Recruit()` method on each of them. 
+     * Then, calls a `.Recruit()` method on each of them and adds to them to the beeple recruited count. 
      */
 	void Squawk()
 	{
