@@ -12,8 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a0cf37e99fcb584dbdf7be0944f8cbf, type: 3}
   m_Name: PigeonAnimation
   m_EditorClassIdentifier: 
-  animName: New Actor Animation
-  animType: 0
+  animName: Pigeon Idle Anim
+  animType: 1
   animMode: 0
   speed: 1
-  frameList: []
+  frameList:
+  - sprites:
+    - {fileID: 21300000, guid: f43ec43ed2ef21f4f952c2a74213604e, type: 3}
+    - {fileID: 21300000, guid: 4888428b468da30409d839cba8eb3ca9, type: 3}
+    - {fileID: 21300000, guid: 4888428b468da30409d839cba8eb3ca9, type: 3}
+    - {fileID: 21300000, guid: 4888428b468da30409d839cba8eb3ca9, type: 3}
+    - {fileID: 21300000, guid: 94ef587693aaa88448528d26c5dbbaa1, type: 3}
+    - {fileID: 21300000, guid: de712990c1be71e4088b8a7e6fd7636f, type: 3}
+    - {fileID: 21300000, guid: de712990c1be71e4088b8a7e6fd7636f, type: 3}
+    - {fileID: 21300000, guid: de712990c1be71e4088b8a7e6fd7636f, type: 3}
