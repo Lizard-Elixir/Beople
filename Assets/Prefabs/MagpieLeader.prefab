@@ -34,22 +34,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1521119622293394441
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4728124945425180686}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee69ec04fe3355d4a8185f6b2bfbaf60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
-  playerBufferDistance: 3
-  recruitedBeopleVar: {fileID: 11400000, guid: 5520c82a3d0807a47ae5bfb8b2ed0d60, type: 2}
-  collectParticles: {fileID: 5611552238406565753}
 --- !u!143 &6341142193545851174
 CharacterController:
   m_ObjectHideFlags: 0
@@ -80,10 +64,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6c8a989b78d32c4681244bd62f1cbee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
   IsRecruited: 0
   speed: 5
   playerBufferDistance: 3
   recruitedBeopleVar: {fileID: 0}
+  collectParticles: {fileID: 0}
+  leader: {fileID: 0}
   dialogue:
     name: 
     sentences: []
@@ -262,10 +249,5 @@ PrefabInstance:
 --- !u!4 &349530862632917898 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5259037748060441082, guid: 9b9d3a7e600c24b4b9baf61cff0328cc, type: 3}
-  m_PrefabInstance: {fileID: 5485967638545175152}
-  m_PrefabAsset: {fileID: 0}
---- !u!198 &5611552238406565753 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 126715999742553353, guid: 9b9d3a7e600c24b4b9baf61cff0328cc, type: 3}
   m_PrefabInstance: {fileID: 5485967638545175152}
   m_PrefabAsset: {fileID: 0}
