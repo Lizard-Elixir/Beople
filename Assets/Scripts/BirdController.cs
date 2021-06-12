@@ -11,6 +11,9 @@ public class BirdController : MonoBehaviour
 	[SerializeField] private float speed = 5.0f;
 	[SerializeField] private double playerBufferDistance = 3.0;
 
+	[SerializeField] private VarObject recruitedBeopleVar;
+
+
 	void Awake() => characterController = GetComponent<CharacterController>();
 
 	void Start()
@@ -27,30 +30,33 @@ public class BirdController : MonoBehaviour
 		}
 	}
 
-	public void Recruit()
+	public bool Recruit()
 	{
 		if (IsRecruited)
 		{
-			return;
+			return false;
 		}
 
 		IsRecruited = true;
+		recruitedBeopleVar.currentNum += 1;
 		Debug.Log("Recruited Berson!");
+		Debug.Log(recruitedBeopleVar.currentNum);
+		return true;
 	}
 
-	void MoveTowardsPlayer() {
+	void MoveTowardsPlayer()
+	{
 		float dist = Vector3.Distance(player.transform.position, transform.position);
 		float step = speed * Time.deltaTime;
 
-        if (dist > playerBufferDistance) {
-		Vector3 playerPos = new Vector3(player.transform.position.x, player.transform.position.y, player.transform.position.z);
-		Vector3 newPos = Vector3.MoveTowards(transform.position, playerPos, step);
-		Vector3 moveVector = newPos - transform.position;
+		if (dist > playerBufferDistance)
+		{
+			Vector3 playerPos = new Vector3(player.transform.position.x, player.transform.position.y, player.transform.position.z);
+			Vector3 newPos = Vector3.MoveTowards(transform.position, playerPos, step);
+			Vector3 moveVector = newPos - transform.position;
 
-		characterController.Move(moveVector);
-
-		Quaternion lookRotation = Quaternion.LookRotation(moveVector);
-		transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, step);
-        }
-    }
+			characterController.Move(moveVector);
+			transform.LookAt(playerPos);
+		}
+	}
 }

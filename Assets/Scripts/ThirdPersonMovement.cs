@@ -1,11 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using EightDirectionalSpriteSystem;
 
 public class ThirdPersonMovement : MonoBehaviour
 {
 	public CharacterController controller;
 	public float speed = 6f;
+
+	private ActorBillboard Billboard;
+
+	void Start()
+	{
+		Billboard = GetComponentInChildren<ActorBillboard>();
+	}
 
 	// Update is called once per frame
 	void Update()
