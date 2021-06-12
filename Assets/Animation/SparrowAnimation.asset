@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a0cf37e99fcb584dbdf7be0944f8cbf, type: 3}
+  m_Name: SparrowAnimation
+  m_EditorClassIdentifier: 
+  animName: Sparrow Idle Animation
+  animType: 1
+  animMode: 0
+  speed: 1
+  frameList:
+  - sprites:
+    - {fileID: 21300000, guid: 89a189ccc57a48245a67b6fc64d6d538, type: 3}
+    - {fileID: 21300000, guid: b41a3d0caab8f9046b8a5bfc17b9a505, type: 3}
+    - {fileID: 21300000, guid: b41a3d0caab8f9046b8a5bfc17b9a505, type: 3}
+    - {fileID: 21300000, guid: b41a3d0caab8f9046b8a5bfc17b9a505, type: 3}
+    - {fileID: 21300000, guid: a0aa53c687c837a45839852cac56ce83, type: 3}
+    - {fileID: 21300000, guid: 45bd79135b6d95d4cb34a30048c46d8a, type: 3}
+    - {fileID: 21300000, guid: 45bd79135b6d95d4cb34a30048c46d8a, type: 3}
+    - {fileID: 21300000, guid: 45bd79135b6d95d4cb34a30048c46d8a, type: 3}
