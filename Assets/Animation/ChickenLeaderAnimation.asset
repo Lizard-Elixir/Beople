@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a0cf37e99fcb584dbdf7be0944f8cbf, type: 3}
   m_Name: ChickenLeaderAnimation
   m_EditorClassIdentifier: 
-  animName: New Actor Animation
+  animName: Chicken Leader Idle
   animType: 1
   animMode: 0
   speed: 1
