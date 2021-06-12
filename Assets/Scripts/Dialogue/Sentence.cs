@@ -5,9 +5,9 @@ using UnityEngine;
 [System.Serializable]
 public class Sentence
 {
-    public bool isPlayer = false;
-    public Sprite portrait;
+	public bool isPlayer = false;
+	public Sprite portrait;
 
-    [TextArea(3, 10)]
-    public string message;
+	[TextArea(3, 10)]
+	public string message;
 }
