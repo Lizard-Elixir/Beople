@@ -13,6 +13,7 @@ public class BirdController : MonoBehaviour
 
 	[SerializeField] private VarObject recruitedBeopleVar;
 	[SerializeField] ParticleSystem collectParticles;
+	[SerializeField] private BirdLeaderController leader; 
 
 	void Awake() => characterController = GetComponent<CharacterController>();
 
@@ -32,7 +33,7 @@ public class BirdController : MonoBehaviour
 
 	public bool Recruit()
 	{
-		if (IsRecruited)
+		if (IsRecruited || (!!leader && !leader.IsRecruited))
 		{
 			return false;
 		}

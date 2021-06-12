@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8315338116869718479}
-  - component: {fileID: 6223217344319107172}
   - component: {fileID: -7259496706531224245}
   m_Layer: 0
   m_Name: ChickenLeader
@@ -34,22 +33,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6223217344319107172
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 206314118647843939}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee69ec04fe3355d4a8185f6b2bfbaf60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
-  playerBufferDistance: 3
-  recruitedBeopleVar: {fileID: 11400000, guid: 5520c82a3d0807a47ae5bfb8b2ed0d60, type: 2}
-  collectParticles: {fileID: 180527446336180318}
 --- !u!143 &-7259496706531224245
 CharacterController:
   m_ObjectHideFlags: 0
@@ -243,10 +226,5 @@ PrefabInstance:
 --- !u!4 &5456297529162577069 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5259037748060441082, guid: 9b9d3a7e600c24b4b9baf61cff0328cc, type: 3}
-  m_PrefabInstance: {fileID: 235158351364816215}
-  m_PrefabAsset: {fileID: 0}
---- !u!198 &180527446336180318 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 126715999742553353, guid: 9b9d3a7e600c24b4b9baf61cff0328cc, type: 3}
   m_PrefabInstance: {fileID: 235158351364816215}
   m_PrefabAsset: {fileID: 0}
