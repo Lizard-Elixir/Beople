@@ -22,7 +22,7 @@ public class UIManager : MonoBehaviour
 		else
 		{
 			timerText.text = timer.currentNum.ToString();
-			beopleText.text = beopleCounter.currentNum.ToString();
+			beopleText.text = "Beople: " + beopleCounter.currentNum.ToString();
 		}
 	}
 }
