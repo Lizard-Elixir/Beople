@@ -2739,29 +2739,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 743215018356322857, guid: 55c16fdf4b850fb4fb62104c5ff1e8c3, type: 3}
-      propertyPath: speed
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 1918006329997296256, guid: 55c16fdf4b850fb4fb62104c5ff1e8c3, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 94ef587693aaa88448528d26c5dbbaa1, type: 3}
     - target: {fileID: 3024397217304581720, guid: 55c16fdf4b850fb4fb62104c5ff1e8c3, type: 3}
       propertyPath: m_Name
       value: Pigeon (19)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4238070161203943386, guid: 55c16fdf4b850fb4fb62104c5ff1e8c3, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: -0.9688957
-      objectReference: {fileID: 0}
-    - target: {fileID: 4238070161203943386, guid: 55c16fdf4b850fb4fb62104c5ff1e8c3, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.24746948
-      objectReference: {fileID: 0}
-    - target: {fileID: 4238070161203943386, guid: 55c16fdf4b850fb4fb62104c5ff1e8c3, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6359693256001887220, guid: 55c16fdf4b850fb4fb62104c5ff1e8c3, type: 3}
       propertyPath: m_RootOrder
@@ -11006,7 +10986,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
@@ -12326,7 +12306,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1030527590
 Transform:
   m_ObjectHideFlags: 0
@@ -23367,25 +23347,9 @@ PrefabInstance:
       propertyPath: m_LocalRotation.x
       value: -0.1747421
       objectReference: {fileID: 0}
-    - target: {fileID: 4715783371999935897, guid: 95f38496378e37748bf23019128a72fa, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5933954958576532507, guid: 95f38496378e37748bf23019128a72fa, type: 3}
       propertyPath: m_Name
       value: Sparrow (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7007413274122725571, guid: 95f38496378e37748bf23019128a72fa, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: b41a3d0caab8f9046b8a5bfc17b9a505, type: 3}
-    - target: {fileID: 8210374080123934826, guid: 95f38496378e37748bf23019128a72fa, type: 3}
-      propertyPath: speed
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 8210374080123934826, guid: 95f38496378e37748bf23019128a72fa, type: 3}
-      propertyPath: leader
-      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 95f38496378e37748bf23019128a72fa, type: 3}
@@ -24273,22 +24237,6 @@ PrefabInstance:
       propertyPath: m_LocalRotation.x
       value: -0.18571895
       objectReference: {fileID: 0}
-    - target: {fileID: 1451978751384398822, guid: 2c61320b75c43e349978a25527c99c36, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2641007959631318549, guid: 2c61320b75c43e349978a25527c99c36, type: 3}
-      propertyPath: speed
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 2641007959631318549, guid: 2c61320b75c43e349978a25527c99c36, type: 3}
-      propertyPath: leader
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3776532412509486780, guid: 2c61320b75c43e349978a25527c99c36, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 1c5e485fb34eea243b6659c478a6f18e, type: 3}
     - target: {fileID: 8553738609191053256, guid: 2c61320b75c43e349978a25527c99c36, type: 3}
       propertyPath: m_RootOrder
       value: 86
