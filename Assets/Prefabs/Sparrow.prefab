@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 2586015015562719671}
   - component: {fileID: 8210374080123934826}
   - component: {fileID: 6165448782679770564}
-  - component: {fileID: 3608821411117092444}
   m_Layer: 0
   m_Name: Sparrow
   m_TagString: Berson
@@ -71,25 +70,6 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 2, z: 0}
---- !u!95 &3608821411117092444
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5933954958576532507}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: fb6cf788f02d93e4cab26fb689b1fdc2, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &7938614910808954686
 GameObject:
   m_ObjectHideFlags: 0
@@ -116,7 +96,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7938614910808954686}
-  m_LocalRotation: {x: -0.17365324, y: 0, z: -0, w: -0.9848069}
+  m_LocalRotation: {x: -0.17757317, y: 0, z: -0, w: -0.9841076}
   m_LocalPosition: {x: 0, y: 1.8, z: 0}
   m_LocalScale: {x: 1.2, y: 1.8, z: 1.2}
   m_Children: []
