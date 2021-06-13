@@ -105,4 +105,5 @@ public class PlayerController : MonoBehaviour
 	{
 		Talking = isTalkingNow;
 	}
+
 }
