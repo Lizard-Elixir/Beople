@@ -54,10 +54,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3253018110860198202}
     m_Modifications:
+    - target: {fileID: 3751450055874642186, guid: 43708f6a2f34f2b43b7cd8f0333b49db, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 911ce4d5e3595d847aeba3398ae8a4b0, type: 2}
+    - target: {fileID: 4494926095433154822, guid: 43708f6a2f34f2b43b7cd8f0333b49db, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 83104f0a589e15642a11c419186f0d14, type: 2}
     - target: {fileID: 4857372434787196263, guid: 43708f6a2f34f2b43b7cd8f0333b49db, type: 3}
       propertyPath: m_Name
       value: LowerApartment1
       objectReference: {fileID: 0}
+    - target: {fileID: 5130151371594244833, guid: 43708f6a2f34f2b43b7cd8f0333b49db, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 83104f0a589e15642a11c419186f0d14, type: 2}
+    - target: {fileID: 5751067922013511092, guid: 43708f6a2f34f2b43b7cd8f0333b49db, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 984bb5cad6bf3b44384b4cc90ef50916, type: 2}
+    - target: {fileID: 5795334525931592587, guid: 43708f6a2f34f2b43b7cd8f0333b49db, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 83104f0a589e15642a11c419186f0d14, type: 2}
+    - target: {fileID: 5849092215882605529, guid: 43708f6a2f34f2b43b7cd8f0333b49db, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 83104f0a589e15642a11c419186f0d14, type: 2}
     - target: {fileID: 6153188265698666279, guid: 43708f6a2f34f2b43b7cd8f0333b49db, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -116,10 +140,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3253018110860198202}
     m_Modifications:
+    - target: {fileID: 1344948249857207580, guid: 2aec8cdef7b37de44890b45c8890a087, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 911ce4d5e3595d847aeba3398ae8a4b0, type: 2}
+    - target: {fileID: 1793598893142981133, guid: 2aec8cdef7b37de44890b45c8890a087, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 83104f0a589e15642a11c419186f0d14, type: 2}
+    - target: {fileID: 3433984591203063063, guid: 2aec8cdef7b37de44890b45c8890a087, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 984bb5cad6bf3b44384b4cc90ef50916, type: 2}
+    - target: {fileID: 3522071532292015396, guid: 2aec8cdef7b37de44890b45c8890a087, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 48544fd3ff5df32439ba450d11260054, type: 2}
     - target: {fileID: 3864292028771172662, guid: 2aec8cdef7b37de44890b45c8890a087, type: 3}
       propertyPath: m_Name
       value: MidApartment1
       objectReference: {fileID: 0}
+    - target: {fileID: 5128798413682680892, guid: 2aec8cdef7b37de44890b45c8890a087, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 48544fd3ff5df32439ba450d11260054, type: 2}
+    - target: {fileID: 5440432826211316805, guid: 2aec8cdef7b37de44890b45c8890a087, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 911ce4d5e3595d847aeba3398ae8a4b0, type: 2}
     - target: {fileID: 6263692632787077329, guid: 2aec8cdef7b37de44890b45c8890a087, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -164,6 +212,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6268156784473420857, guid: 2aec8cdef7b37de44890b45c8890a087, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 83104f0a589e15642a11c419186f0d14, type: 2}
+    - target: {fileID: 6626809388543007316, guid: 2aec8cdef7b37de44890b45c8890a087, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 83104f0a589e15642a11c419186f0d14, type: 2}
+    - target: {fileID: 6737342282285381205, guid: 2aec8cdef7b37de44890b45c8890a087, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 83104f0a589e15642a11c419186f0d14, type: 2}
+    - target: {fileID: 8478084906941991446, guid: 2aec8cdef7b37de44890b45c8890a087, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 83104f0a589e15642a11c419186f0d14, type: 2}
+    - target: {fileID: 9128828764930964052, guid: 2aec8cdef7b37de44890b45c8890a087, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 83104f0a589e15642a11c419186f0d14, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2aec8cdef7b37de44890b45c8890a087, type: 3}
 --- !u!4 &1951910013892032069 stripped
@@ -182,6 +250,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Apartment Crown
       objectReference: {fileID: 0}
+    - target: {fileID: 2048460863800542857, guid: 01dc09a8bcbe5114f959276739901bbe, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6070df39eb3eaaf4fa32f4a415ba7cbf, type: 2}
     - target: {fileID: 3678565430599197911, guid: 01dc09a8bcbe5114f959276739901bbe, type: 3}
       propertyPath: m_RootOrder
       value: 0

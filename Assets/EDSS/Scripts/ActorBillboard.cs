@@ -170,7 +170,7 @@ namespace EightDirectionalSpriteSystem
 				beforeRenderBillboardEvent();
 
 			// calculate camera position on 2D XZ plane
-			Vector3 cameraPosition2D = Camera.current.transform.position;
+			Vector3 cameraPosition2D = Camera.main.transform.position;
 			cameraPosition2D.y = 0.0f;
 
 			// calculate billboard position on 2D XZ plane
@@ -218,7 +218,7 @@ namespace EightDirectionalSpriteSystem
                  * but with a constant, fixed rotation.
                  */
 				// myTransform.rotation = billboardRotation;
-				myTransform.LookAt(Camera.current.transform.position);
+				myTransform.LookAt(Camera.main.transform.position);
 				myTransform.rotation = Quaternion.Euler(-myTransform.rotation.eulerAngles.x, 0f, 0f);
 			}
 		}
