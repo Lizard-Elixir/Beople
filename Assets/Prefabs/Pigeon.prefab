@@ -26,7 +26,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1552287860888092029}
-  m_LocalRotation: {x: -0.24746948, y: 0, z: -0, w: -0.9688957}
+  m_LocalRotation: {x: -0.25210586, y: 0, z: -0, w: -0.96769965}
   m_LocalPosition: {x: 0, y: 1.8, z: 0}
   m_LocalScale: {x: 1.2, y: 1.8, z: 1.2}
   m_Children: []
@@ -122,7 +122,6 @@ GameObject:
   - component: {fileID: 6359693256001887220}
   - component: {fileID: 743215018356322857}
   - component: {fileID: 3328554466285694855}
-  - component: {fileID: 267996816}
   m_Layer: 0
   m_Name: Pigeon
   m_TagString: Berson
@@ -182,25 +181,6 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 2, z: 0}
---- !u!95 &267996816
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3024397217304581720}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 3a94bf8957b4ae840b40d2f3510d99b4, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &3810243318289228848
 PrefabInstance:
   m_ObjectHideFlags: 0

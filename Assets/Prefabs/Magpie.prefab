@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 8553738609191053256}
   - component: {fileID: 2641007959631318549}
   - component: {fileID: 56213661151089595}
-  - component: {fileID: 556473557386637712}
   m_Layer: 0
   m_Name: Magpie
   m_TagString: Berson
@@ -71,25 +70,6 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 2, z: 0}
---- !u!95 &556473557386637712
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 508345590335040100}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 607fb29af37454743a19b4c9bc6d698b, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &4286306674625626433
 GameObject:
   m_ObjectHideFlags: 0
@@ -116,7 +96,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4286306674625626433}
-  m_LocalRotation: {x: -0.18375492, y: 0, z: -0, w: -0.9829721}
+  m_LocalRotation: {x: -0.19196151, y: 0, z: -0, w: -0.98140246}
   m_LocalPosition: {x: 0, y: 1.8, z: 0}
   m_LocalScale: {x: 1.2, y: 1.8, z: 1.2}
   m_Children: []
