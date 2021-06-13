@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
 	private GameObject SquawkGfx;
 	private float LastSquawkTime;
 	[SerializeField] private VarObject recruitedBeopleVar;
+	private PauseControl pauseControl;
 
 	// Start is called before the first frame update
 	void Start()
@@ -18,6 +19,7 @@ public class PlayerController : MonoBehaviour
 		SquawkGfx = GameObject.Find("Squawk");
 		SetSquawkRadius(SquawkRadius);
 		SquawkGfx.SetActive(false);
+		pauseControl = FindObjectOfType<PauseControl>();
 	}
 
 	void SetSquawkRadius(float radius)
@@ -28,7 +30,7 @@ public class PlayerController : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
-		if (Input.GetKeyDown(KeyCode.Space) && !Talking)
+		if (Input.GetKeyDown(KeyCode.Space) && !Talking && !pauseControl.gameIsPaused)
 		{
 			Squawk();
 		}

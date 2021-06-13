@@ -7,6 +7,7 @@ public class ThirdPersonMovement : MonoBehaviour
 {
 	public CharacterController controller;
 	public PlayerController playerController;
+	private PauseControl pauseControl;
 	public float speed = 6f;
 
 	private ActorBillboard Billboard;
@@ -15,12 +16,13 @@ public class ThirdPersonMovement : MonoBehaviour
 	{
 		Billboard = GetComponentInChildren<ActorBillboard>();
 		playerController = GetComponentInParent<PlayerController>();
+		pauseControl = FindObjectOfType<PauseControl>();
 	}
 
 	// Update is called once per frame
 	void Update()
 	{
-		if (!playerController.Talking)
+		if (!playerController.Talking && !pauseControl.gameIsPaused)
 		{
 			float horizontal = Input.GetAxisRaw("Horizontal");
 			float vertical = Input.GetAxisRaw("Vertical");

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PauseControl : MonoBehaviour
 {
-	public static bool gameIsPaused;
+	public bool gameIsPaused;
 
 	public GameObject PauseGraphics;
 	private AudioThemeManager audioThemeManager;
@@ -41,6 +41,7 @@ public class PauseControl : MonoBehaviour
 		Time.timeScale = 0f;
 		PauseGraphics.SetActive(true);
 		audioThemeManager.PauseTheme();
+		Input.ResetInputAxes();
 	}
 
 	public void ResumeGame()
@@ -49,6 +50,7 @@ public class PauseControl : MonoBehaviour
 		Time.timeScale = 1;
 		PauseGraphics.SetActive(false);
 		audioThemeManager.ResumeTheme();
+		Input.ResetInputAxes();
 	}
 
 	public void QuitGame()
