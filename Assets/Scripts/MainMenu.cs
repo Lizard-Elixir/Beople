@@ -6,10 +6,12 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
 	public GameObject IntroExposition;
+	public GameObject LoadingScreen;
 
 	public void Start()
 	{
 		IntroExposition.SetActive(false);
+		LoadingScreen.SetActive(false);
 	}
 
 	public void ShowIntroExposition()
@@ -19,6 +21,8 @@ public class MainMenu : MonoBehaviour
 
 	public void PlayGame()
 	{
+		LoadingScreen.SetActive(true);
+		IntroExposition.SetActive(false);
 		SceneManager.LoadScene("Main");
 	}
 
