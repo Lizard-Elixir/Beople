@@ -82,7 +82,7 @@ GameObject:
   - component: {fileID: 4715783371999935897}
   - component: {fileID: 7007413274122725571}
   - component: {fileID: 5653373538831542665}
-  - component: {fileID: 7462272504170477942}
+  - component: {fileID: 5698885289242602092}
   m_Layer: 0
   m_Name: GFX
   m_TagString: Untagged
@@ -168,7 +168,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   actorTransform: {fileID: 2586015015562719671}
---- !u!114 &7462272504170477942
+--- !u!114 &5698885289242602092
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -177,15 +177,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 7938614910808954686}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 13df993729b1044479022a475cc05723, type: 3}
+  m_Script: {fileID: 11500000, guid: a6873bb102a99cb42bebde5d7f00c144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   actorBillboard: {fileID: 5653373538831542665}
   idleAnim: {fileID: 11400000, guid: 53f101d0b2b7acc4281d66738318a8b7, type: 2}
-  walkAnim: {fileID: 0}
-  shootAnim: {fileID: 0}
-  painAnim: {fileID: 0}
-  dieAnim: {fileID: 0}
 --- !u!1001 &919857232483512292
 PrefabInstance:
   m_ObjectHideFlags: 0
