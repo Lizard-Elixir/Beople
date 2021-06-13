@@ -52,7 +52,8 @@ namespace EightDirectionalSpriteSystem
 
 		public void SetActorForwardVector(Vector3 actorForward)
 		{
-			actorForwardVector = actorForward;
+			// This is causing some weird issues with our game, so disabling for now
+			// actorForwardVector = actorForward;
 		}
 
 		public void PlayAnimation(ActorAnimation animation)
