@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using TMPro;
+
 public class UIManager : MonoBehaviour
 {
 
@@ -13,7 +15,12 @@ public class UIManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        timerText.text = timer.currentNum.ToString();
-        beopleText.text = "Beople: " + beopleCounter.currentNum.ToString();
+        if (timer.currentNum <= 0)
+        {
+            SceneManager.LoadScene("Lose Menu");
+        } else {
+            timerText.text = timer.currentNum.ToString();
+            beopleText.text = "Beople: " + beopleCounter.currentNum.ToString();
+        }
     }
 }
