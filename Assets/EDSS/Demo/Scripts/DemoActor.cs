@@ -50,42 +50,42 @@ namespace EightDirectionalSpriteSystem
 				actorBillboard.SetActorForwardVector(myTransform.forward);
 			}
 
-			if (Input.GetKeyDown(KeyCode.Space))
-			{
-				State nextState = currentState;
-				switch (currentState)
-				{
-					case State.NONE:
-						nextState = State.IDLE;
-						break;
+			// if (Input.GetKeyDown(KeyCode.Space))
+			// {
+			// 	State nextState = currentState;
+			// 	switch (currentState)
+			// 	{
+			// 		case State.NONE:
+			// 			nextState = State.IDLE;
+			// 			break;
 
-					case State.IDLE:
-						nextState = State.WALKING;
-						break;
+			// 		case State.IDLE:
+			// 			nextState = State.WALKING;
+			// 			break;
 
-					case State.WALKING:
-						nextState = State.SHOOT;
-						break;
+			// 		case State.WALKING:
+			// 			nextState = State.SHOOT;
+			// 			break;
 
-					case State.SHOOT:
-						nextState = State.PAIN;
-						break;
+			// 		case State.SHOOT:
+			// 			nextState = State.PAIN;
+			// 			break;
 
-					case State.PAIN:
-						nextState = State.DIE;
-						break;
+			// 		case State.PAIN:
+			// 			nextState = State.DIE;
+			// 			break;
 
-					case State.DIE:
-						nextState = State.IDLE;
-						break;
+			// 		case State.DIE:
+			// 			nextState = State.IDLE;
+			// 			break;
 
-					default:
-						nextState = State.IDLE;
-						break;
-				}
+			// 		default:
+			// 			nextState = State.IDLE;
+			// 			break;
+			// 	}
 
-				SetCurrentState(nextState);
-			}
+			// 	SetCurrentState(nextState);
+			// }
 
 		}
 
