@@ -30,7 +30,7 @@ public class DialogueManager : MonoBehaviour
 
 	void Update()
 	{
-		if (!!birdTarget && Input.GetKeyDown(KeyCode.Return)) {
+		if (!!birdTarget && Input.GetKeyDown(KeyCode.Space)) {
 			DisplayNextSentence();   
 		}
 	}
