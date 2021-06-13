@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e5a3a804661bbd408cca0efb6e045be, type: 3}
   m_Name: timer
   m_EditorClassIdentifier: 
-  startingNum: 240
-  currentNum: 240
+  startingNum: 210
+  currentNum: 210
