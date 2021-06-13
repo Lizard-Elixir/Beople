@@ -71,6 +71,7 @@ public class PlayerController : MonoBehaviour
 			BirdLeaderController leaderController = leader.GetComponent<BirdLeaderController>();
 			if (distance <= SquawkRadius && !leaderController.IsRecruited)
 			{
+				Input.ResetInputAxes();
 				leaderController.TriggerDialogue();
 				HandleRecruitment(leader);
 				return;
