@@ -44,11 +44,11 @@ public class AudioThemeManager : MonoBehaviour
 				theme.Play();
 				break;
 			case "SparrowLeader":
-				theme.clip = NPCMagpieLoop;
+				theme.clip = NPCSparrowLoop;
 				theme.Play();
 				break;
 			case "MagpieLeader":
-				theme.clip = NPCSparrowLoop;
+				theme.clip = NPCMagpieLoop;
 				theme.Play();
 				break;
 			default:
