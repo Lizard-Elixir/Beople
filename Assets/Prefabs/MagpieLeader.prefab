@@ -79,19 +79,28 @@ MonoBehaviour:
       message: what do u want
     - isPlayer: 1
       portrait: {fileID: 21300000, guid: b5d29bc485bf19644a1bb1bb414a2301, type: 3}
-      message: omg nothing... srory
+      message: Oh my god, nothing...I-...
     - isPlayer: 0
       portrait: {fileID: 21300000, guid: 1a157fa01c68d6f4c83a2ebc6b84b6b2, type: 3}
-      message: oh ur so shy thats so hot...
+      message: oh ur so shy thats soo cute...
     - isPlayer: 1
       portrait: {fileID: 21300000, guid: fa51bd8e12f2ea440a98a5b6dc2297cb, type: 3}
-      message: ' ? ?? /'
+      message: Uhhh...
+    - isPlayer: 0
+      portrait: {fileID: 21300000, guid: 1a157fa01c68d6f4c83a2ebc6b84b6b2, type: 3}
+      message: ur scarf is so nice. u new here?
+    - isPlayer: 1
+      portrait: {fileID: 21300000, guid: b5d29bc485bf19644a1bb1bb414a2301, type: 3}
+      message: No I'm-...
     - isPlayer: 0
       portrait: {fileID: 21300000, guid: 5bb99863de091c14c8f2a3e61105eb41, type: 3}
       message: ok fine I guess i'll go with u
     - isPlayer: 1
       portrait: {fileID: 21300000, guid: 8fb6fae84dac3814cb8630dba3eaa3e4, type: 3}
-      message: um .
+      message: Um...winter?
+    - isPlayer: 1
+      portrait: {fileID: 21300000, guid: 5bb99863de091c14c8f2a3e61105eb41, type: 3}
+      message: yea dog, whatevs.
 --- !u!1 &9074656755694633771
 GameObject:
   m_ObjectHideFlags: 0
