@@ -89,4 +89,12 @@ public class AudioThemeManager : MonoBehaviour
 
 		theme.Play();
 	}
+
+	public void PauseTheme() {
+		theme.Pause();
+	}
+
+	public void ResumeTheme() {
+		theme.Play();
+	}
 }

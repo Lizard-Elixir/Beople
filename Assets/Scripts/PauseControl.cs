@@ -7,10 +7,12 @@ public class PauseControl : MonoBehaviour
 	public static bool gameIsPaused;
 
 	public GameObject PauseGraphics;
+	private AudioThemeManager audioThemeManager;
 
 	void Start()
 	{
 		PauseGraphics.SetActive(false);
+		audioThemeManager = FindObjectOfType<AudioThemeManager>();
 	}
 
 	void Update()
@@ -38,6 +40,7 @@ public class PauseControl : MonoBehaviour
 		gameIsPaused = true;
 		Time.timeScale = 0f;
 		PauseGraphics.SetActive(true);
+		audioThemeManager.PauseTheme();
 	}
 
 	public void ResumeGame()
@@ -45,6 +48,7 @@ public class PauseControl : MonoBehaviour
 		gameIsPaused = false;
 		Time.timeScale = 1;
 		PauseGraphics.SetActive(false);
+		audioThemeManager.ResumeTheme();
 	}
 
 	public void QuitGame()
