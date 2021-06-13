@@ -7,20 +7,22 @@ using TMPro;
 public class UIManager : MonoBehaviour
 {
 
-    [SerializeField] VarObject timer;
-    [SerializeField] VarObject beopleCounter;
-    [SerializeField] TextMeshProUGUI beopleText;
-    [SerializeField] TextMeshProUGUI timerText;
+	[SerializeField] VarObject timer;
+	[SerializeField] VarObject beopleCounter;
+	[SerializeField] TextMeshProUGUI beopleText;
+	[SerializeField] TextMeshProUGUI timerText;
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (timer.currentNum <= 0)
-        {
-            SceneManager.LoadScene("Lose Menu");
-        } else {
-            timerText.text = timer.currentNum.ToString();
-            beopleText.text = "Beople: " + beopleCounter.currentNum.ToString();
-        }
-    }
+	// Update is called once per frame
+	void Update()
+	{
+		if (timer.currentNum <= 0)
+		{
+			SceneManager.LoadScene("Lose Menu");
+		}
+		else
+		{
+			timerText.text = timer.currentNum.ToString();
+			beopleText.text = beopleCounter.currentNum.ToString();
+		}
+	}
 }
