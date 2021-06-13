@@ -9,11 +9,11 @@ public class BirdController : MonoBehaviour
 
 	public bool IsRecruited = false;
 	[SerializeField] private float speed = 5.0f;
-	[SerializeField] private double playerBufferDistance = 3.0;
+	[SerializeField] private float playerBufferDistance = 6.0f;
 
 	[SerializeField] private VarObject recruitedBeopleVar;
 	[SerializeField] ParticleSystem collectParticles;
-	[SerializeField] private BirdLeaderController leader; 
+	[SerializeField] private BirdLeaderController leader;
 
 	void Awake() => characterController = GetComponent<CharacterController>();
 
