@@ -56,7 +56,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7511297806933570527}
-  m_LocalRotation: {x: -0.11055513, y: 0, z: -0, w: -0.99387}
+  m_LocalRotation: {x: -0.32041043, y: 0, z: -0, w: -0.9472788}
   m_LocalPosition: {x: 0, y: 1.8, z: 0}
   m_LocalScale: {x: 1.2, y: 1.8, z: 1.2}
   m_Children: []
@@ -332,6 +332,7 @@ GameObject:
   - component: {fileID: 7511297808730203068}
   - component: {fileID: 7511297808730203071}
   - component: {fileID: 1182169624}
+  - component: {fileID: 928533297}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -387,7 +388,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 7511297808730203069}
-  playerController: {fileID: 0}
+  playerController: {fileID: 7511297808730203071}
   speed: 14
 --- !u!114 &7511297808730203071
 MonoBehaviour:
@@ -404,7 +405,7 @@ MonoBehaviour:
   SquawkRadius: 12.5
   SquawkCooldown: 2
   Talking: 0
-  recruitedBeopleVar: {fileID: 0}
+  recruitedBeopleVar: {fileID: 11400000, guid: 5520c82a3d0807a47ae5bfb8b2ed0d60, type: 2}
 --- !u!95 &1182169624
 Animator:
   serializedVersion: 3
@@ -424,3 +425,17 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &928533297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7511297808730203043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d19f979577431941b702d5b0efac839, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameIsPaused: 0
+  PauseGraphics: {fileID: 0}
