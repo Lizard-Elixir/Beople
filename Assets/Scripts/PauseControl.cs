@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PauseControl : MonoBehaviour
 {
@@ -53,9 +54,9 @@ public class PauseControl : MonoBehaviour
 		Input.ResetInputAxes();
 	}
 
-	public void QuitGame()
+	public void GoToMainMenu()
 	{
-		Debug.Log("QUIT!");
-		Application.Quit();
+		ResumeGame();
+		SceneManager.LoadScene("Main Menu");
 	}
 }
