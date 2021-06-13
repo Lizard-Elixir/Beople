@@ -11,10 +11,13 @@ public class WallController : MonoBehaviour
 
     private void Start()
     {
-        requirementHUD.text = beopleRequirement.ToString();
+
     }
 
-
+    private void Update()
+    {
+        requirementHUD.text =  recruitedBeopleVar.currentNum + "/" + beopleRequirement.ToString();
+    }
 
     // for some reason OnCoillisionEnter isn't working?
     //When gets bumped by something, checks if it was the player, then if they have enough people it is destroyed
