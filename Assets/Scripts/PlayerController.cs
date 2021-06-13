@@ -54,18 +54,29 @@ public class PlayerController : MonoBehaviour
 		SquawkGfx.GetComponent<AudioSource>().Play();
 
 		GameObject[] beople = GameObject.FindGameObjectsWithTag("Berson");
+		GameObject[] leaders = GameObject.FindGameObjectsWithTag("BersonLeader");
+
 		foreach (GameObject berson in beople)
 		{
 			float distance = Vector3.Distance(transform.position, berson.transform.position);
 			if (distance <= SquawkRadius)
 			{
-				bool recruited = berson.GetComponent<BirdController>().Recruit();
-				if (recruited)
-				{
-					HandleRecruitment(berson);
-				}
+				berson.GetComponent<BirdController>().Recruit();
 			}
 		}
+
+		foreach (GameObject leader in leaders)
+		{
+			float distance = Vector3.Distance(transform.position, leader.transform.position);
+			BirdLeaderController leaderController = leader.GetComponent<BirdLeaderController>();
+			if (distance <= SquawkRadius && !leaderController.IsRecruited)
+			{
+				leaderController.TriggerDialogue();
+				HandleRecruitment(leader);
+				return;
+			}
+		}
+		
 
 		LastSquawkTime = Time.time;
 	}

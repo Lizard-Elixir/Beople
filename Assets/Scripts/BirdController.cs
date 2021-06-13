@@ -6,9 +6,9 @@ public class BirdController : MonoBehaviour
 {
 	CharacterController characterController;
 	public GameObject player;
+	private ThirdPersonMovement movementScript;
 
 	public bool IsRecruited = false;
-	[SerializeField] private float speed = 5.0f;
 	[SerializeField] private float playerBufferDistance = 6.0f;
 
 	[SerializeField] private VarObject recruitedBeopleVar;
@@ -20,6 +20,7 @@ public class BirdController : MonoBehaviour
 	void Start()
 	{
 		player = GameObject.FindWithTag("Player");
+		movementScript = player.GetComponent<ThirdPersonMovement>();
 	}
 
 	// Update is called once per frame
@@ -54,9 +55,9 @@ public class BirdController : MonoBehaviour
 	}
 
 	public void MoveTowardsPlayer()
-	{
+	{	
 		float dist = Vector3.Distance(player.transform.position, transform.position);
-		float step = speed * Time.deltaTime;
+		float step = movementScript.speed * Time.deltaTime;
 
 		if (dist > playerBufferDistance)
 		{
