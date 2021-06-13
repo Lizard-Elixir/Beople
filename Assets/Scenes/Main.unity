@@ -3347,6 +3347,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a92837f4cbfb2246b1602afefe8e528, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerController: {fileID: 1182169623}
   recruitedBeopleVar: {fileID: 11400000, guid: 5520c82a3d0807a47ae5bfb8b2ed0d60, type: 2}
   timer: {fileID: 11400000, guid: 40f52a55b11ee2b4c8c81e6293b26e25, type: 2}
 --- !u!4 &439354327
@@ -9899,6 +9900,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7511297808730203070, guid: 260ad1b717dc277438662e0d908e08b0, type: 3}
   m_PrefabInstance: {fileID: 1182169621}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1182169623 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7511297808730203071, guid: 260ad1b717dc277438662e0d908e08b0, type: 3}
+  m_PrefabInstance: {fileID: 1182169621}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 928533296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 128fb3bce3404dd408a63eec6fd1083e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1186362542
 PrefabInstance:
   m_ObjectHideFlags: 0

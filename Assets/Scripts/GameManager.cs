@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+	public PlayerController playerController;
 	[SerializeField] private VarObject recruitedBeopleVar;
 	[SerializeField] private VarObject timer;
 
@@ -18,14 +19,15 @@ public class GameManager : MonoBehaviour
 
 	void timerTick()
 	{
+		if (playerController.Talking)
+		{
+			return;
+		}
+
 		timer.currentNum -= 1;
 		if (timer.currentNum <= 0)
 		{
 			SceneManager.LoadScene("Lose Menu");
 		}
 	}
-
-
-
-
 }
