@@ -76,25 +76,25 @@ MonoBehaviour:
     sentences:
     - isPlayer: 0
       portrait: {fileID: 21300000, guid: 1ded973b6cc931d4ca87d9c22a48fd01, type: 3}
-      message: 'Wayul howdy thayure pardner, whut can hawmble ol'' cluckster do fer
-        ya?        '
+      message: Wayul howdy thayure pardner, whut can hawmble ol' Cluckster do fer
+        ya?
     - isPlayer: 1
       portrait: {fileID: 21300000, guid: fa51bd8e12f2ea440a98a5b6dc2297cb, type: 3}
-      message: I.. uhhh.. sorry? What was that?
+      message: I...uhhh...sorry? What was that?
     - isPlayer: 0
       portrait: {fileID: 21300000, guid: 42cc748d749f0c84bb94a00f12870bb5, type: 3}
-      message: 'Whut? Kayn''t yawl understaynd whut ahm sayun''? Ahm speakin'' plain
-        bird, sunneh!        '
+      message: Whut? Kayn't yawl understaynd whut ahm sayun'? Ahm speakin' plain
+        bird, sunneh!
     - isPlayer: 1
-      portrait: {fileID: 21300000, guid: db32eb6450888e149972e67ac35ea7f2, type: 3}
+      portrait: {fileID: 21300000, guid: 8fb6fae84dac3814cb8630dba3eaa3e4, type: 3}
       message: Ah, I'm sorry, I think there's some sort of language barrier here.
         Sorry to bother you!
     - isPlayer: 0
       portrait: {fileID: 21300000, guid: 662b440454f8d904186b18b933d22c32, type: 3}
-      message: "... whutschur problem, kid?        \r\n"
+      message: "... whutschur problem, kid? Yer lookin\u2019 ta scrap?"
     - isPlayer: 1
       portrait: {fileID: 21300000, guid: 8fb6fae84dac3814cb8630dba3eaa3e4, type: 3}
-      message: Uh, okay well I'll be on my way. Bye!
+      message: Uh, okay...well, I'll be on my way. Bye!
     - isPlayer: 0
       portrait: {fileID: 21300000, guid: 662b440454f8d904186b18b933d22c32, type: 3}
       message: 'Eyyy! Whayer yawl goin''?? Git back hare! '
