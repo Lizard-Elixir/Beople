@@ -11,6 +11,8 @@ public class ParkController : MonoBehaviour
 
 	private GameObject player;
 	private TextMeshPro instructions;
+    [SerializeField] VarObject birbCounter;
+    public int birbRequirement;
 
     void Start()
     {
@@ -26,9 +28,18 @@ public class ParkController : MonoBehaviour
 		Vector3 pointCheck = new Vector3(player.transform.position.x, transform.position.y, player.transform.position.z);
         if (parkCollider.bounds.Contains(pointCheck))
         {
-			instructions.text = "Press \"E\" to fly away";
+            if (birbCounter.currentNum >= birbRequirement)
+            {
+                instructions.text = "Press \"E\" to fly away";
+            }
+            else
+            {
+                instructions.text = "You need " + birbRequirement.ToString() + " beople before you can fly away!";
+            }
 
-			if(Input.GetKeyDown(KeyCode.E)) {
+
+
+			if(Input.GetKeyDown(KeyCode.E) && birbCounter.currentNum >= birbRequirement) {
 				SceneManager.LoadScene("Win Menu");
 			}
         } else {

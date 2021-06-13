@@ -3250,6 +3250,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6405835281685619392}
   - component: {fileID: 7372794994845373973}
+  - component: {fileID: 2098339084199540791}
+  - component: {fileID: 2309226865679635967}
   m_Layer: 0
   m_Name: Gas Station
   m_TagString: Untagged
@@ -3349,8 +3351,34 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 30.128342, y: 11.869999, z: 43.20065}
-  m_Center: {x: 0.66361237, y: 4.58, z: 9.3766}
+  m_Size: {x: 26.295853, y: 11.869999, z: 21.123428}
+  m_Center: {x: -0.20891571, y: 4.58, z: -1.662014}
+--- !u!65 &2098339084199540791
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6029697110863607930}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.569275, y: 1, z: 12.197548}
+  m_Center: {x: -7.430664, y: 0.6, z: 27.517601}
+--- !u!65 &2309226865679635967
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6029697110863607930}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.569275, y: 1, z: 12.197548}
+  m_Center: {x: 9, y: 0.6, z: 27.517601}
 --- !u!1 &6052027889435665464
 GameObject:
   m_ObjectHideFlags: 0
