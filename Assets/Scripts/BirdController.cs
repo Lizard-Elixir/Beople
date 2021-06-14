@@ -44,7 +44,6 @@ public class BirdController : MonoBehaviour
 		collectParticles.Play();
 
 		// Allow the player to pass through recruited beople
-		GameObject player = GameObject.FindGameObjectWithTag("Player");
 		Collider playerCollider = player.GetComponent<Collider>();
 		Collider bersonCollider = GetComponent<Collider>();
 		Physics.IgnoreCollision(bersonCollider, playerCollider);
@@ -55,7 +54,7 @@ public class BirdController : MonoBehaviour
 	}
 
 	public void MoveTowardsPlayer()
-	{	
+	{
 		float dist = Vector3.Distance(player.transform.position, transform.position);
 		float step = movementScript.speed * Time.deltaTime;
 
