@@ -15,8 +15,8 @@ GameObject:
   m_Name: The_Pack_OPT_05_AC_Unit_002_leg_left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1799494367116928618
 Transform:
@@ -96,8 +96,8 @@ GameObject:
   m_Name: The_Pack_OPT_05_stick_002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &676980904979808162
 Transform:
@@ -177,8 +177,8 @@ GameObject:
   m_Name: The_Pack_OPT_05_window_002_window_down
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2074179169668693588
 Transform:
@@ -258,8 +258,8 @@ GameObject:
   m_Name: The_Pack_OPT_05_AC_Unit_001_leg_right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &4998829360525639954
 Transform:
@@ -384,8 +384,8 @@ GameObject:
   m_Name: The_Pack_OPT_05_AC_AC_Unit_002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &7314767796065074509
 Transform:
@@ -465,8 +465,8 @@ GameObject:
   m_Name: The_Pack_OPT_05_AC_AC_Unit_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1180809655447090382
 Transform:
@@ -546,8 +546,8 @@ GameObject:
   m_Name: The_Pack_OPT_05_AC_Unit_001_leg_left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &430755804455237401
 Transform:
@@ -627,8 +627,8 @@ GameObject:
   m_Name: The_Pack_OPT_05_window_001_window_down
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &6045048045970644099
 Transform:
@@ -708,8 +708,8 @@ GameObject:
   m_Name: The_Pack_OPT_05_window_003_window_down
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &8999771776861773133
 Transform:
@@ -789,8 +789,8 @@ GameObject:
   m_Name: The_Pack_OPT_05_AC_Unit_002_leg_right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &3882317173203069018
 Transform:
@@ -870,8 +870,8 @@ GameObject:
   m_Name: The_Pack_building_OPT_05
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &5586853051560002385
 Transform:
@@ -951,8 +951,8 @@ GameObject:
   m_Name: The_Pack_OPT_05_window_up_window_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &3689989616247300183
 Transform:
@@ -1032,8 +1032,8 @@ GameObject:
   m_Name: The_Pack_OPT_05_stick_003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &8159532086030874156
 Transform:
@@ -1113,8 +1113,8 @@ GameObject:
   m_Name: The_Pack_OPT_05_window_up_window_002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &4199739363494772620
 Transform:
@@ -1194,8 +1194,8 @@ GameObject:
   m_Name: The_Pack_OPT_05_window_up_window_003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2214180401970548025
 Transform:

@@ -15,8 +15,8 @@ GameObject:
   m_Name: street_Floor_The_Pack_building
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1739066740258370802
 Transform:
@@ -96,8 +96,8 @@ GameObject:
   m_Name: street_Floor_The_Pack_window_up_window_004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1004019544621464693
 Transform:
@@ -177,8 +177,8 @@ GameObject:
   m_Name: street_Floor_The_Pack_window_005_window_down
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &4757156238030269383
 Transform:
@@ -258,8 +258,8 @@ GameObject:
   m_Name: Front_door_street_Floor_The_Pack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &4598363005145582536
 Transform:
@@ -339,8 +339,8 @@ GameObject:
   m_Name: street_Floor_The_Pack_window_004_window_down
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &5978022172373849158
 Transform:
@@ -420,8 +420,8 @@ GameObject:
   m_Name: street_Floor_The_Pack_window_up_window_005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &8722835688782238035
 Transform:
@@ -501,8 +501,8 @@ GameObject:
   m_Name: street_Floor_The_Pack_intercom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &7590021071019367087
 Transform:
@@ -621,8 +621,8 @@ GameObject:
   m_Name: street_Floor_The_Pack_doornob_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &3021682935970428520
 Transform:
@@ -702,8 +702,8 @@ GameObject:
   m_Name: street_Floor_The_Pack_doornob_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &7452131171339160911
 Transform:

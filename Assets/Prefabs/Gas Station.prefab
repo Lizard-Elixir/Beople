@@ -15,8 +15,8 @@ GameObject:
   m_Name: Shop_Gas_Station_entrance_windows_glass_13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &3382490493862608720
 Transform:
@@ -96,8 +96,8 @@ GameObject:
   m_Name: Shop_Gas_Station_entrance_windows_glass_08
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &972094806299015465
 Transform:
@@ -177,8 +177,8 @@ GameObject:
   m_Name: Gas_Station_hood_2_oily_02_hose_02_hosepipe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &8038951219164190334
 Transform:
@@ -258,8 +258,8 @@ GameObject:
   m_Name: Shop_Gas_Station_entrance_windows_glass_09
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2888503313944048557
 Transform:
@@ -339,8 +339,8 @@ GameObject:
   m_Name: Shop_Gas_Station_entrance_windows_glass_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2075457396358870680
 Transform:
@@ -420,8 +420,8 @@ GameObject:
   m_Name: Gas_Station_hood_1_oily_04_hose_01_handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1249008617924213279
 Transform:
@@ -501,8 +501,8 @@ GameObject:
   m_Name: Gas_Station_up_hood_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &5393681586884736797
 Transform:
@@ -582,8 +582,8 @@ GameObject:
   m_Name: Gas_Station_hood_1_dispenser_oily_04_screen_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &6175447171089785240
 Transform:
@@ -663,8 +663,8 @@ GameObject:
   m_Name: Gas_Station_hood_1_oily_04_hose_02_handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &7154072786193804807
 Transform:
@@ -744,8 +744,8 @@ GameObject:
   m_Name: Gas_Station_hood_2_dispenser_oily_02_screen_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &810211948560810849
 Transform:
@@ -825,8 +825,8 @@ GameObject:
   m_Name: Gas_Station_hood_1_rest_dispenser_oily_04
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &6552800133185152893
 Transform:
@@ -906,8 +906,8 @@ GameObject:
   m_Name: Gas_Station_hood_2_dispenser_oily_01_screen_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &8536603539697994963
 Transform:
@@ -987,8 +987,8 @@ GameObject:
   m_Name: Gas_Station_hood_1_rest_dispenser_oily_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &4989548784401880822
 Transform:
@@ -1068,8 +1068,8 @@ GameObject:
   m_Name: Gas_Station_hood_1_dispenser_oily_03_screen_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &7440239878812588891
 Transform:
@@ -1149,8 +1149,8 @@ GameObject:
   m_Name: Gas_Station_hood_1_trashcan_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &4255432268196688254
 Transform:
@@ -1230,8 +1230,8 @@ GameObject:
   m_Name: Shop_Gas_Station_BIG_sign_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &4272003123764016396
 Transform:
@@ -1311,8 +1311,8 @@ GameObject:
   m_Name: Gas_Station_hood_2_oily_02_metal_hose_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &4864751394684030291
 Transform:
@@ -1392,8 +1392,8 @@ GameObject:
   m_Name: Shop_Gas_Station_entrance_windows_glass_11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &5731404572849563934
 Transform:
@@ -1473,8 +1473,8 @@ GameObject:
   m_Name: Shop_Gas_Station_BIG_sign_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2774639823716664105
 Transform:
@@ -1554,8 +1554,8 @@ GameObject:
   m_Name: Gas_Station_hood_1_dispenser_oily_04_screen_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &4540883415420714001
 Transform:
@@ -1635,8 +1635,8 @@ GameObject:
   m_Name: Gas_Station_hood_2_oily_01_hose_01_handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2442225976731885055
 Transform:
@@ -1716,8 +1716,8 @@ GameObject:
   m_Name: Gas_Station_hood_1_oily_04_metal_hose_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &613946913041419719
 Transform:
@@ -1797,8 +1797,8 @@ GameObject:
   m_Name: Shop_Gas_Station_entrance_windows_glass_07
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &3346931439935971642
 Transform:
@@ -1878,8 +1878,8 @@ GameObject:
   m_Name: Gas_Station_hood_2_oily_01_hose_02_hosepipe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &174760535529241583
 Transform:
@@ -1959,8 +1959,8 @@ GameObject:
   m_Name: Gas_Station_base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1504855748825947638
 Transform:
@@ -2040,8 +2040,8 @@ GameObject:
   m_Name: Shop_Gas_Station_entrance_windows_glass_12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1685501289430070898
 Transform:
@@ -2121,8 +2121,8 @@ GameObject:
   m_Name: Gas_Station_hood_2_oily_01_hose_01_hosepipe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &7550515817236364514
 Transform:
@@ -2202,8 +2202,8 @@ GameObject:
   m_Name: Gas_Station_hood_2_oily_01_metal_hose_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2722457299833756185
 Transform:
@@ -2283,8 +2283,8 @@ GameObject:
   m_Name: Shop_Gas_Station_edge_entrance
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &7671934028590646906
 Transform:
@@ -2364,8 +2364,8 @@ GameObject:
   m_Name: Gas_Station_hood_1_oily_03_metal_hose_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &8117042230344012538
 Transform:
@@ -2445,8 +2445,8 @@ GameObject:
   m_Name: Gas_Station_hood_2_oily_02_hose_01_handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1026463513787636952
 Transform:
@@ -2526,8 +2526,8 @@ GameObject:
   m_Name: Gas_Station_hood_1_dispenser_oily_03_screen_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &658888226553180119
 Transform:
@@ -2607,8 +2607,8 @@ GameObject:
   m_Name: Gas_Station_hood_2_trashcan_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &109982048844309108
 Transform:
@@ -2688,8 +2688,8 @@ GameObject:
   m_Name: Gas_Station_hood_1_oily_03_hose_01_handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &7589206428229837811
 Transform:
@@ -2769,8 +2769,8 @@ GameObject:
   m_Name: Gas_Station_up_hood_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &6085996420291544950
 Transform:
@@ -2850,8 +2850,8 @@ GameObject:
   m_Name: Shop_Gas_Station_entrance_windows_Sliding_doors
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &4136110467195305366
 Transform:
@@ -2931,8 +2931,8 @@ GameObject:
   m_Name: Gas_Station_hood_1_oily_03_hose_02_handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &3287614201272231146
 Transform:
@@ -3012,8 +3012,8 @@ GameObject:
   m_Name: Gas_Station_hood_2_oily_02_hose_01_hosepipe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1777697774552430609
 Transform:
@@ -3093,8 +3093,8 @@ GameObject:
   m_Name: Gas_Station_hood_2_ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1011402526425688748
 Transform:
@@ -3174,8 +3174,8 @@ GameObject:
   m_Name: Gas_Station_hood_1_oily_03_hose_02_hosepipe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &811916217688926754
 Transform:
@@ -3394,8 +3394,8 @@ GameObject:
   m_Name: Shop_Gas_Station_letters
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &7800348855074249019
 Transform:
@@ -3475,8 +3475,8 @@ GameObject:
   m_Name: Gas_Station_hood_2_trashcan_04
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &7784011400935287738
 Transform:
@@ -3556,8 +3556,8 @@ GameObject:
   m_Name: Shop_Gas_Station_sign
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &6428763370721476029
 Transform:
@@ -3637,8 +3637,8 @@ GameObject:
   m_Name: Gas_Station_hood_1_ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &4552795129132262522
 Transform:
@@ -3718,8 +3718,8 @@ GameObject:
   m_Name: building_Shop_Gas_Station
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &498578943762375510
 Transform:
@@ -3799,8 +3799,8 @@ GameObject:
   m_Name: Gas_Station_hood_2_oily_01_metal_hose_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &395641802807476665
 Transform:
@@ -3880,8 +3880,8 @@ GameObject:
   m_Name: Shop_Gas_Station_entrance_windows_glass_06
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &3627760162632243097
 Transform:
@@ -3961,8 +3961,8 @@ GameObject:
   m_Name: Shop_Gas_Station_entrance_windows_glass_05
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &8346393238844990261
 Transform:
@@ -4042,8 +4042,8 @@ GameObject:
   m_Name: Gas_Station_hood_1_oily_03_metal_hose_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &8126353902564162851
 Transform:
@@ -4123,8 +4123,8 @@ GameObject:
   m_Name: Gas_Station_hood_2_rest_dispenser_oily_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &6101700831245962539
 Transform:
@@ -4204,8 +4204,8 @@ GameObject:
   m_Name: Gas_Station_hood_2_rest_dispenser_oily_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &9150926641821333309
 Transform:
@@ -4285,8 +4285,8 @@ GameObject:
   m_Name: Shop_Gas_Station_entrance_windows_dorr_glass_right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &8734071149820288335
 Transform:
@@ -4366,8 +4366,8 @@ GameObject:
   m_Name: Gas_Station_hood_2_dispenser_oily_02_screen_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &5678945913205525838
 Transform:
@@ -4447,8 +4447,8 @@ GameObject:
   m_Name: Gas_Station_hood_1_oily_03_hose_01_hosepipe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &4061992684936603623
 Transform:
@@ -4528,8 +4528,8 @@ GameObject:
   m_Name: Shop_Gas_Station_entrance_windows_glass_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &7839663418842953669
 Transform:
@@ -4609,8 +4609,8 @@ GameObject:
   m_Name: Shop_Gas_Station_entrance_glass_01_windows
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &4334137819090973301
 Transform:
@@ -4690,8 +4690,8 @@ GameObject:
   m_Name: Gas_Station_hood_1_trashcan_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &6486160292045868312
 Transform:
@@ -4771,8 +4771,8 @@ GameObject:
   m_Name: Gas_Station_hood_2_oily_02_hose_02_handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1653631240155530236
 Transform:
@@ -4852,8 +4852,8 @@ GameObject:
   m_Name: Gas_Station_hood_2_dispenser_oily_01_screen_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1264612977183554751
 Transform:
@@ -4933,8 +4933,8 @@ GameObject:
   m_Name: Gas_Station_hood_1_oily_04_hose_02_hosepipe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &275655448961626423
 Transform:
@@ -5014,8 +5014,8 @@ GameObject:
   m_Name: Gas_Station_hood_2_oily_02_metal_hose_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &4319107022151243694
 Transform:
@@ -5095,8 +5095,8 @@ GameObject:
   m_Name: Shop_Gas_Station_entrance_windows_glass_10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &703301576529520087
 Transform:
@@ -5176,8 +5176,8 @@ GameObject:
   m_Name: Gas_Station_hood_1_oily_04_hose_01_hosepipe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &490495647773365538
 Transform:
@@ -5257,8 +5257,8 @@ GameObject:
   m_Name: Shop_Gas_Station_entrance_windows_dorr_glass_left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1511871050018905589
 Transform:
@@ -5338,8 +5338,8 @@ GameObject:
   m_Name: Gas_Station_hood_2_oily_01_hose_02_handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2324706781508906211
 Transform:
@@ -5419,8 +5419,8 @@ GameObject:
   m_Name: Gas_Station_hood_1_oily_04_metal_hose_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &6714319476566326205
 Transform:
@@ -5500,8 +5500,8 @@ GameObject:
   m_Name: Shop_Gas_Station_entrance_windows_glass_04
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &3947981428273772369
 Transform:
