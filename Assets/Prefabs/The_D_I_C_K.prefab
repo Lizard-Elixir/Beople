@@ -15,8 +15,8 @@ GameObject:
   m_Name: The_D_I_C_K_tyre_tyre_BACK_RIGHT
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &3535147923597422737
 Transform:
@@ -96,8 +96,8 @@ GameObject:
   m_Name: body_car_The_D_I_C_K_Side_Mirror_Left_mirror
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &664603165495119206
 Transform:
@@ -177,8 +177,8 @@ GameObject:
   m_Name: body_car_The_D_I_C_K_metal_CARRRR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &6961866492550873425
 Transform:
@@ -258,8 +258,8 @@ GameObject:
   m_Name: car_The_D_I_C_K_windows_Window_Front
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &6727217352292539752
 Transform:
@@ -339,8 +339,8 @@ GameObject:
   m_Name: The_D_I_C_K_blinker_right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &5043269464991466818
 Transform:
@@ -420,8 +420,8 @@ GameObject:
   m_Name: body_car_The_D_I_C_K_metal_Side_Mirror_Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &8905714983076616813
 Transform:
@@ -501,8 +501,8 @@ GameObject:
   m_Name: body_car_The_D_I_C_K_Side_Mirror_Right_mirror
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1905559326658187152
 Transform:
@@ -582,8 +582,8 @@ GameObject:
   m_Name: The_D_I_C_K_tyre_tyre_FRONT_LEFT
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &7360929302234940409
 Transform:
@@ -663,8 +663,8 @@ GameObject:
   m_Name: car_The_D_I_C_K_windows_Window_Back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &3275940980003931707
 Transform:
@@ -744,8 +744,8 @@ GameObject:
   m_Name: The_D_I_C_K_headlight_right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &9050912403932585302
 Transform:
@@ -825,8 +825,8 @@ GameObject:
   m_Name: car_The_D_I_C_K_windows_Window_Back_Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &8611605546136667840
 Transform:
@@ -906,8 +906,8 @@ GameObject:
   m_Name: car_The_D_I_C_K_Window_Back_Left_windows
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &693492402457861273
 Transform:
@@ -987,8 +987,8 @@ GameObject:
   m_Name: Bumper_Front_body_car_The_D_I_C_K
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1798910539352606697
 Transform:
@@ -1068,8 +1068,8 @@ GameObject:
   m_Name: The_D_I_C_K_tyre_FRONT_RIGHT_metal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &8301708042063452583
 Transform:
@@ -1149,8 +1149,8 @@ GameObject:
   m_Name: body_car_The_D_I_C_K_Black_Thingy_metal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1066360818176461386
 Transform:
@@ -1230,8 +1230,8 @@ GameObject:
   m_Name: The_D_I_C_K_tyre_BACK_RIGHT_metal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &249071318694090175
 Transform:
@@ -1381,8 +1381,8 @@ GameObject:
   m_Name: body_car_The_D_I_C_K_Bumper_Back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1199239346799044695
 Transform:
@@ -1462,8 +1462,8 @@ GameObject:
   m_Name: The_D_I_C_K_tyre_FRONT_LEFT_metal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &6163787883435812528
 Transform:
@@ -1543,8 +1543,8 @@ GameObject:
   m_Name: The_D_I_C_K_tyre_tyre_BACK_LEFT
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2927667738762102307
 Transform:
@@ -1624,8 +1624,8 @@ GameObject:
   m_Name: car_The_D_I_C_K_windows_Window_Front_Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &6726900350371334934
 Transform:
@@ -1705,8 +1705,8 @@ GameObject:
   m_Name: The_D_I_C_K_tyre_tyre_FRONT_RIGHT
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &5364404780299601368
 Transform:
@@ -1786,8 +1786,8 @@ GameObject:
   m_Name: The_D_I_C_K_tyre_BACK_LEFT_metal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &7665404420627075979
 Transform:
@@ -1867,8 +1867,8 @@ GameObject:
   m_Name: car_The_D_I_C_K_windows_Window_Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &3114020864203787272
 Transform:
@@ -1948,8 +1948,8 @@ GameObject:
   m_Name: The_D_I_C_K_blinker_left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &7058634306893402165
 Transform:
@@ -2029,8 +2029,8 @@ GameObject:
   m_Name: The_D_I_C_K_headlight_left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1234033537715975074
 Transform:
@@ -2110,8 +2110,8 @@ GameObject:
   m_Name: body_car_The_D_I_C_K_metal_Side_Mirror_Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &4624164071824456651
 Transform:

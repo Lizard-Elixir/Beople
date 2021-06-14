@@ -1,12 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
+[RequireComponent(typeof(NavMeshAgent))]
 public class BirdController : MonoBehaviour
 {
 	CharacterController characterController;
 	public GameObject player;
 	private ThirdPersonMovement movementScript;
+	Vector3 destination;
+	public NavMeshAgent agent;
 
 	public bool IsRecruited = false;
 	[SerializeField] private float playerBufferDistance = 6.0f;
@@ -19,8 +23,13 @@ public class BirdController : MonoBehaviour
 
 	void Start()
 	{
+		agent = GetComponent<NavMeshAgent>();
+		destination = agent.destination;
 		player = GameObject.FindWithTag("Player");
 		movementScript = player.GetComponent<ThirdPersonMovement>();
+
+		// Set initial movement speed to match player movement speed
+		agent.speed = movementScript.speed;
 	}
 
 	// Update is called once per frame
@@ -55,17 +64,22 @@ public class BirdController : MonoBehaviour
 
 	public void MoveTowardsPlayer()
 	{
-		float dist = Vector3.Distance(player.transform.position, transform.position);
-		float step = movementScript.speed * Time.deltaTime;
-
-		if (dist > playerBufferDistance)
+		float distanceFromPlayer = Vector3.Distance(transform.position, player.transform.position);
+		bool isFarEnoughFromPlayer = distanceFromPlayer > playerBufferDistance;
+		if (isFarEnoughFromPlayer)
 		{
-			Vector3 playerPos = new Vector3(player.transform.position.x, player.transform.position.y, player.transform.position.z);
-			Vector3 newPos = Vector3.MoveTowards(transform.position, playerPos, step);
-			Vector3 moveVector = newPos - transform.position;
-
-			characterController.Move(moveVector);
-			transform.LookAt(playerPos);
+			float distanceFromPreviousDestination = Vector3.Distance(destination, player.transform.position);
+			bool destionationHasChanged = distanceFromPreviousDestination > 1.0f;
+			if (destionationHasChanged)
+			{
+				destination = player.transform.position;
+			}
 		}
+		else
+		{
+			destination = transform.position;
+		}
+
+		agent.destination = destination;
 	}
 }

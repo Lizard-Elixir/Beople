@@ -15,8 +15,8 @@ GameObject:
   m_Name: COLOHOUSE_stairs_back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2969719631456536726
 Transform:
@@ -96,8 +96,8 @@ GameObject:
   m_Name: COLOHOUSE_mini_roof_back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &3487901980477661028
 Transform:
@@ -177,8 +177,8 @@ GameObject:
   m_Name: COLOHOUSE_Entrance_stairs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2469338549947398482
 Transform:
@@ -258,8 +258,8 @@ GameObject:
   m_Name: COLOHOUSE_Entrance_Entrance_side
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2924816038984853875
 Transform:
@@ -339,8 +339,8 @@ GameObject:
   m_Name: COLOHOUSE_window_06_window_frame_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &3505357385367737886
 Transform:
@@ -420,8 +420,8 @@ GameObject:
   m_Name: COLOHOUSE_window_08_window_frame_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &107440494195211824
 Transform:
@@ -501,8 +501,8 @@ GameObject:
   m_Name: COLOHOUSE_window_up_001_window_04
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &6168388045317979013
 Transform:
@@ -582,8 +582,8 @@ GameObject:
   m_Name: COLOHOUSE_window_01_window_frame_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &4517318640841973701
 Transform:
@@ -663,8 +663,8 @@ GameObject:
   m_Name: COLOHOUSE_door_Front_pSphere1_handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &6777270339335537036
 Transform:
@@ -744,8 +744,8 @@ GameObject:
   m_Name: COLOHOUSE_window_02_window_down_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &4611387725186876581
 Transform:
@@ -825,8 +825,8 @@ GameObject:
   m_Name: COLOHOUSE_door_Back_handle_pCube2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2825673883843246142
 Transform:
@@ -906,8 +906,8 @@ GameObject:
   m_Name: COLOHOUSE_window_08_window_down_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &8065213877536048495
 Transform:
@@ -987,8 +987,8 @@ GameObject:
   m_Name: COLOHOUSE_window_03_window_frame_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &3952386171857387299
 Transform:
@@ -1068,8 +1068,8 @@ GameObject:
   m_Name: COLOHOUSE_window_up_001_window_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &6988009388918030714
 Transform:
@@ -1149,8 +1149,8 @@ GameObject:
   m_Name: COLOHOUSE_door_door_Back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2604237990637242272
 Transform:
@@ -1230,8 +1230,8 @@ GameObject:
   m_Name: COLOHOUSE_window_06_window_down_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &4300750689266247651
 Transform:
@@ -1311,8 +1311,8 @@ GameObject:
   m_Name: COLOHOUSE_window_04_window_frame_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &5903739540536797397
 Transform:
@@ -1474,8 +1474,8 @@ GameObject:
   m_Name: COLOHOUSE_window_up_001_window_08
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &5352012078303439178
 Transform:
@@ -1555,8 +1555,8 @@ GameObject:
   m_Name: COLOHOUSE_door_Front_handle_pCube2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2656504362664051343
 Transform:
@@ -1636,8 +1636,8 @@ GameObject:
   m_Name: COLOHOUSE_door_door_Front
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &5164098729319626156
 Transform:
@@ -1717,8 +1717,8 @@ GameObject:
   m_Name: COLOHOUSE_window_03_window_down_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &732900496285954878
 Transform:
@@ -1798,8 +1798,8 @@ GameObject:
   m_Name: COLOHOUSE_window_02_window_frame_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &59580555514206488
 Transform:
@@ -1879,8 +1879,8 @@ GameObject:
   m_Name: COLOHOUSE_window_up_001_window_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2137357644736207769
 Transform:
@@ -1960,8 +1960,8 @@ GameObject:
   m_Name: COLOHOUSE_window_07_window_frame_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &7290244320986071866
 Transform:
@@ -2041,8 +2041,8 @@ GameObject:
   m_Name: COLOHOUSE_window_up_001_window_07
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &3356126479025316607
 Transform:
@@ -2122,8 +2122,8 @@ GameObject:
   m_Name: COLOHOUSE_window_05_window_down_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &5756570309352440676
 Transform:
@@ -2203,8 +2203,8 @@ GameObject:
   m_Name: COLOHOUSE_window_05_window_frame_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &8814269299519672377
 Transform:
@@ -2284,8 +2284,8 @@ GameObject:
   m_Name: house_01_COLOHOUSE
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &9087427511902138244
 Transform:
@@ -2365,8 +2365,8 @@ GameObject:
   m_Name: COLOHOUSE_window_01_window_down_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1646936508988535853
 Transform:
@@ -2446,8 +2446,8 @@ GameObject:
   m_Name: COLOHOUSE_window_up_001_window_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &6989766071966060204
 Transform:
@@ -2527,8 +2527,8 @@ GameObject:
   m_Name: COLOHOUSE_mini_roof_Entrance
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &8294630522121415397
 Transform:
@@ -2608,8 +2608,8 @@ GameObject:
   m_Name: COLOHOUSE_window_07_window_down_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &6747853382902346959
 Transform:
@@ -2689,8 +2689,8 @@ GameObject:
   m_Name: COLOHOUSE_door_Back_pSphere1_handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &3462730379556483753
 Transform:
@@ -2770,8 +2770,8 @@ GameObject:
   m_Name: COLOHOUSE_window_up_001_window_05
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &479638536543592702
 Transform:
@@ -2851,8 +2851,8 @@ GameObject:
   m_Name: COLOHOUSE_side_pole_right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2420434627863374899
 Transform:
@@ -2932,8 +2932,8 @@ GameObject:
   m_Name: COLOHOUSE_window_up_001_window_06
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &4529066047971562106
 Transform:
@@ -3013,8 +3013,8 @@ GameObject:
   m_Name: COLOHOUSE_side_pole_left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2726177138536359834
 Transform:
@@ -3094,8 +3094,8 @@ GameObject:
   m_Name: COLOHOUSE_window_04_window_down_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2757526706140092917
 Transform:
