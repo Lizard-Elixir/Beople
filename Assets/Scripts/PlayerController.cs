@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
 	private float LastSquawkTime;
 	[SerializeField] private VarObject recruitedBeopleVar;
 	private PauseControl pauseControl;
+	private HashSet<GameObject> RecruitedBeople = new HashSet<GameObject>();
 
 	// Start is called before the first frame update
 	void Start()
@@ -64,6 +65,7 @@ public class PlayerController : MonoBehaviour
 			if (distance <= SquawkRadius)
 			{
 				berson.GetComponent<BirdController>().Recruit();
+				RecruitedBeople.Add(berson);
 			}
 		}
 
@@ -75,17 +77,18 @@ public class PlayerController : MonoBehaviour
 			{
 				Input.ResetInputAxes();
 				leaderController.TriggerDialogue();
-				HandleRecruitment(leader);
+				HandleLeaderRecruitment(leader);
 				return;
 			}
 		}
-		
+
 
 		LastSquawkTime = Time.time;
 	}
 
-	void HandleRecruitment(GameObject berson)
+	void HandleLeaderRecruitment(GameObject berson)
 	{
+		RecruitedBeople.Add(berson);
 		switch (berson.name)
 		{
 			case "ChickenLeader":
@@ -94,6 +97,11 @@ public class PlayerController : MonoBehaviour
 			case "SparrowLeader":
 				ThirdPersonMovement movementScript = GetComponentInParent<ThirdPersonMovement>();
 				movementScript.speed *= 2f;
+				foreach (GameObject recruitedBerson in RecruitedBeople)
+				{
+					BirdController birdScript = recruitedBerson.GetComponent<BirdController>();
+					birdScript.agent.speed = movementScript.speed;
+				}
 				break;
 			case "MagpieLeader":
 				SetSquawkRadius(SquawkRadius *= 1.5f);

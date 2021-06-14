@@ -10,7 +10,7 @@ public class BirdController : MonoBehaviour
 	public GameObject player;
 	private ThirdPersonMovement movementScript;
 	Vector3 destination;
-	NavMeshAgent agent;
+	public NavMeshAgent agent;
 
 	public bool IsRecruited = false;
 	[SerializeField] private float playerBufferDistance = 6.0f;
@@ -27,6 +27,9 @@ public class BirdController : MonoBehaviour
 		destination = agent.destination;
 		player = GameObject.FindWithTag("Player");
 		movementScript = player.GetComponent<ThirdPersonMovement>();
+
+		// Set initial movement speed to match player movement speed
+		agent.speed = movementScript.speed;
 	}
 
 	// Update is called once per frame
