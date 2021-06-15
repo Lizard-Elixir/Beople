@@ -7,8 +7,8 @@ using TMPro;
 public class EndGameStats : MonoBehaviour
 {
 
-	[SerializeField] VarObject timer;
-	[SerializeField] VarObject beopleCounter;
+	[SerializeField] VarNumber timer;
+	[SerializeField] VarNumber beopleCounter;
 	[SerializeField] TextMeshProUGUI statsText;
 
 	// Update is called once per frame

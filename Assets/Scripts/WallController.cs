@@ -5,7 +5,7 @@ using TMPro;
 public class WallController : MonoBehaviour
 {
 	[SerializeField] float beopleRequirement = 5f;
-	[SerializeField] private VarObject recruitedBeopleVar;
+	[SerializeField] private VarNumber recruitedBeopleVar;
 	[SerializeField] private TextMeshProUGUI requirementHUD;
 	[SerializeField] private GameObject breakParticles;
 

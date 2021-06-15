@@ -11,7 +11,7 @@ public class ParkController : MonoBehaviour
 
 	private GameObject player;
 	private TextMeshPro instructions;
-	[SerializeField] VarObject birbCounter;
+	[SerializeField] VarNumber birbCounter;
 	public int birbRequirement;
 
 	void Start()

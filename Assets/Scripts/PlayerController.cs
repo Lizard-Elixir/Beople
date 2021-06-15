@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
 
 	private GameObject SquawkGfx;
 	private float LastSquawkTime;
-	[SerializeField] private VarObject recruitedBeopleVar;
+	[SerializeField] private VarNumber recruitedBeopleVar;
 	private PauseControl pauseControl;
 	private HashSet<GameObject> RecruitedBeople = new HashSet<GameObject>();
 

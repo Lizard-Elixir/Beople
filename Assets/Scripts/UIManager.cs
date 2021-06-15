@@ -7,8 +7,8 @@ using TMPro;
 public class UIManager : MonoBehaviour
 {
 
-	[SerializeField] VarObject timer;
-	[SerializeField] VarObject beopleCounter;
+	[SerializeField] VarNumber timer;
+	[SerializeField] VarNumber beopleCounter;
 	[SerializeField] TextMeshProUGUI beopleText;
 	[SerializeField] TextMeshProUGUI timerText;
 

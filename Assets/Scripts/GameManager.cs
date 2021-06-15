@@ -6,8 +6,8 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
 	public PlayerController playerController;
-	[SerializeField] private VarObject recruitedBeopleVar;
-	[SerializeField] private VarObject timer;
+	[SerializeField] private VarNumber recruitedBeopleVar;
+	[SerializeField] private VarNumber timer;
 
 	// Start is called before the first frame update
 	void Start()

@@ -15,7 +15,7 @@ public class BirdController : MonoBehaviour
 	public bool IsRecruited = false;
 	[SerializeField] private float playerBufferDistance = 6.0f;
 
-	[SerializeField] private VarObject recruitedBeopleVar;
+	[SerializeField] private VarNumber recruitedBeopleVar;
 	[SerializeField] ParticleSystem collectParticles;
 	[SerializeField] private BirdLeaderController leader;
 
