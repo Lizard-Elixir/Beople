@@ -14,12 +14,18 @@ public enum MainMenuPage
 public class MainMenu : MonoBehaviour
 {
 	[SerializeField] private MainMenuPageVariable Page;
+	public GameObject Instructions;
 	public GameObject IntroExposition;
 	public GameObject LoadingScreen;
 
 	public void Start()
 	{
 		ShowMainMenu();
+	}
+
+	public void ShowInstructions()
+	{
+		Instructions.SetActive(true);
 	}
 
 	public void ShowIntroExposition()
@@ -48,6 +54,7 @@ public class MainMenu : MonoBehaviour
 	{
 		IntroExposition.SetActive(false);
 		LoadingScreen.SetActive(false);
+        Instructions.SetActive(false);
 
 		switch (page)
 		{
