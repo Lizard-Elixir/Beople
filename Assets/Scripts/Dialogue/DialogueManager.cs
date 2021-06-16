@@ -11,7 +11,8 @@ public class DialogueManager : MonoBehaviour
 	private Queue<Sentence> sentences;
 	private TextMeshProUGUI dialogueName;
 	private TextMeshProUGUI dialogueMessage;
-	private Image portrait;
+	private Image leftPortrait;
+	private Image rightPortrait;
 	private AudioThemeManager audioThemeManager;
 	private PlayerController playerController;
 	public BirdLeaderController birdTarget;
@@ -30,8 +31,9 @@ public class DialogueManager : MonoBehaviour
 
 	void Update()
 	{
-		if (!!birdTarget && Input.GetKeyDown(KeyCode.Space)) {
-			DisplayNextSentence();   
+		if (!!birdTarget && Input.GetKeyDown(KeyCode.Space))
+		{
+			DisplayNextSentence();
 		}
 	}
 
@@ -69,7 +71,20 @@ public class DialogueManager : MonoBehaviour
 
 		dialogueName.text = sentence.isPlayer ? "Beepo" : currentDialogue.name;
 		dialogueMessage.text = sentence.message;
-		portrait.sprite = sentence.portrait;
+
+		if (sentence.isPlayer)
+		{
+			leftPortrait.enabled = true;
+			rightPortrait.enabled = false;
+			leftPortrait.sprite = sentence.portrait;
+		}
+		else
+		{
+			leftPortrait.enabled = false;
+			rightPortrait.enabled = true;
+			rightPortrait.sprite = sentence.portrait;
+
+		}
 	}
 
 	void EndDialogue()
@@ -83,24 +98,26 @@ public class DialogueManager : MonoBehaviour
 
 	void ShowDialoague()
 	{
-		for(int i=0; i<transform.childCount; i++)
+		for (int i = 0; i < transform.childCount; i++)
 		{
 			transform.GetChild(i).gameObject.SetActive(true);
 		}
 
-		
+
 		dialogueMessage = GameObject.FindWithTag("DialogueMessage").GetComponent<TextMeshProUGUI>();
 		dialogueName = GameObject.FindWithTag("DialogueName").GetComponent<TextMeshProUGUI>();
-		portrait = GameObject.FindWithTag("DialoguePortrait").GetComponent<Image>();
+		leftPortrait = GameObject.Find("LeftPortrait").GetComponent<Image>();
+		rightPortrait = GameObject.Find("RightPortrait").GetComponent<Image>();
 
 		dialogueMessage.text = "";
-		dialogueName.text= "";
-		portrait.sprite = null;
+		dialogueName.text = "";
+		leftPortrait.sprite = null;
+		rightPortrait.sprite = null;
 	}
 
 	void HideDialogue()
 	{
-		for(int i=0; i<transform.childCount; i++)
+		for (int i = 0; i < transform.childCount; i++)
 		{
 			transform.GetChild(i).gameObject.SetActive(false);
 		}
