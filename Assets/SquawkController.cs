@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class SquawkController : MonoBehaviour
@@ -82,16 +83,17 @@ public class SquawkController : MonoBehaviour
 		switch (berson.name)
 		{
 			case "ChickenLeader":
-				// TODO(Lange): Replace this with a different powerup
-				// recruitedBeopleVar.currentNum += 10;
+				SquawkCooldown *= 0.75f;
 				break;
 			case "SparrowLeader":
 				ThirdPersonMovement movementScript = GetComponentInParent<ThirdPersonMovement>();
 				movementScript.speed *= 2f;
-				// TODO(Lange): Have this change *all* bersons on the map, not just the recruited ones.
-				foreach (GameObject recruitedBerson in RecruitedBeople)
+				GameObject[] normalBersons = GameObject.FindGameObjectsWithTag("Berson");
+				GameObject[] leaderBersons = GameObject.FindGameObjectsWithTag("BersonLeader");
+				GameObject[] allBersons = normalBersons.Concat(leaderBersons).ToArray();
+				foreach (GameObject b in allBersons)
 				{
-					BirdController birdScript = recruitedBerson.GetComponent<BirdController>();
+					BirdController birdScript = b.GetComponent<BirdController>();
 					birdScript.agent.speed = movementScript.speed;
 				}
 				break;
