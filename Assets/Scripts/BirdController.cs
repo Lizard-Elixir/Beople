@@ -15,7 +15,6 @@ public class BirdController : MonoBehaviour
 	public bool IsRecruited = false;
 	[SerializeField] private float playerBufferDistance = 6.0f;
 
-	[SerializeField] private VarNumber recruitedBeopleVar;
 	[SerializeField] ParticleSystem collectParticles;
 	[SerializeField] private BirdLeaderController leader;
 
@@ -49,7 +48,8 @@ public class BirdController : MonoBehaviour
 		}
 
 		IsRecruited = true;
-		recruitedBeopleVar.currentNum += 1;
+
+		player.GetComponent<PlayerController>().RecruitedBeople.Add(gameObject);
 		collectParticles.Play();
 
 		// Allow the player to pass through recruited beople
@@ -57,8 +57,6 @@ public class BirdController : MonoBehaviour
 		Collider bersonCollider = GetComponent<Collider>();
 		Physics.IgnoreCollision(bersonCollider, playerCollider);
 
-		Debug.Log("Recruited Berson!");
-		Debug.Log(recruitedBeopleVar.currentNum);
 		return true;
 	}
 

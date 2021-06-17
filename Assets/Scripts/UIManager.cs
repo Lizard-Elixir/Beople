@@ -8,9 +8,14 @@ public class UIManager : MonoBehaviour
 {
 
 	[SerializeField] VarNumber timer;
-	[SerializeField] VarNumber beopleCounter;
 	[SerializeField] TextMeshProUGUI beopleText;
 	[SerializeField] TextMeshProUGUI timerText;
+	private HashSet<GameObject> RecruitedBeople;
+
+	void Start()
+	{
+		RecruitedBeople = GameObject.FindWithTag("Player").GetComponent<PlayerController>().RecruitedBeople;
+	}
 
 	// Update is called once per frame
 	void Update()
@@ -22,7 +27,7 @@ public class UIManager : MonoBehaviour
 		else
 		{
 			timerText.text = timer.currentNum.ToString();
-			beopleText.text = "Beople: " + beopleCounter.currentNum.ToString();
+			beopleText.text = "Beople: " + RecruitedBeople.Count.ToString();
 		}
 	}
 }

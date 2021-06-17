@@ -6,14 +6,12 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
 	public PlayerController playerController;
-	[SerializeField] private VarNumber recruitedBeopleVar;
 	[SerializeField] private VarNumber timer;
 
 	// Start is called before the first frame update
 	void Start()
 	{
 		timer.currentNum = timer.startingNum;
-		recruitedBeopleVar.currentNum = recruitedBeopleVar.startingNum;
 		InvokeRepeating("timerTick", 0, 1);
 	}
 
