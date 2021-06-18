@@ -20,7 +20,7 @@ public class BirdController : MonoBehaviour
 
 	void Awake() => characterController = GetComponent<CharacterController>();
 
-	void Start()
+	protected void Start()
 	{
 		agent = GetComponent<NavMeshAgent>();
 		destination = agent.destination;
@@ -32,7 +32,7 @@ public class BirdController : MonoBehaviour
 	}
 
 	// Update is called once per frame
-	void Update()
+	protected void Update()
 	{
 		if (IsRecruited)
 		{
