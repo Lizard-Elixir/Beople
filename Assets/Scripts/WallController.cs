@@ -5,18 +5,18 @@ using TMPro;
 public class WallController : MonoBehaviour
 {
 	[SerializeField] float beopleRequirement = 5f;
-	[SerializeField] private VarNumber recruitedBeopleVar;
 	[SerializeField] private TextMeshProUGUI requirementHUD;
 	[SerializeField] private GameObject breakParticles;
+	private HashSet<GameObject> RecruitedBeople;
 
 	private void Start()
 	{
-
+		RecruitedBeople = GameObject.FindWithTag("Player").GetComponent<PlayerController>().RecruitedBeople;
 	}
 
 	private void Update()
 	{
-		requirementHUD.text = recruitedBeopleVar.currentNum + "/" + beopleRequirement.ToString();
+		requirementHUD.text = RecruitedBeople.Count + "/" + beopleRequirement.ToString();
 	}
 
 	// for some reason OnCoillisionEnter isn't working?
@@ -25,7 +25,7 @@ public class WallController : MonoBehaviour
 	{
 		if (collision.gameObject.tag == "Player")
 		{
-			if (recruitedBeopleVar.currentNum >= beopleRequirement)
+			if (RecruitedBeople.Count >= beopleRequirement)
 			{
 				GameObject particles = Instantiate(breakParticles);
 				particles.transform.position = gameObject.transform.position;
