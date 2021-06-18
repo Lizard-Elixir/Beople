@@ -11083,7 +11083,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!114 &932955183 stripped
 MonoBehaviour:
@@ -12344,7 +12344,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1030527589
 GameObject:
@@ -12377,7 +12377,7 @@ Transform:
   - {fileID: 1774235080}
   - {fileID: 1771788750}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1033192217
 PrefabInstance:
@@ -15096,7 +15096,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7511297808730203070, guid: 260ad1b717dc277438662e0d908e08b0, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7511297808730203070, guid: 260ad1b717dc277438662e0d908e08b0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15999,7 +15999,7 @@ Transform:
   - {fileID: 2110598004}
   - {fileID: 156075727}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1221292995
 PrefabInstance:
@@ -16331,7 +16331,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3469210242972003021, guid: c516646e55061a84aa5ac21ef92712a4, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3469210242972003021, guid: c516646e55061a84aa5ac21ef92712a4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16639,7 +16639,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2440663154015528670, guid: b33f331140ebc8d499a0ef75332941d2, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2440663154015528670, guid: b33f331140ebc8d499a0ef75332941d2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -22669,7 +22669,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 45, y: 0, z: 0}
 --- !u!114 &1788951191
 MonoBehaviour:
