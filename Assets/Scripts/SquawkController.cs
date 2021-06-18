@@ -6,6 +6,7 @@ using UnityEngine;
 public class SquawkController : MonoBehaviour
 {
 	public float SquawkRadius = 12.5f;
+	public float SquawkDuration = 1f;
 	public float SquawkCooldown = 2f;
 	public HashSet<GameObject> RecruitedBeople = new HashSet<GameObject>();
 
@@ -26,7 +27,7 @@ public class SquawkController : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
-		if (Time.time - LastSquawkTime > SquawkCooldown)
+		if (Time.time - LastSquawkTime > SquawkDuration)
 		{
 			meshRenderer.enabled = false;
 			sphereCollider.enabled = false;
