@@ -39,7 +39,7 @@ public class DialogueManager : MonoBehaviour
 
 	public void StartDialogue(Dialogue dialogue, BirdLeaderController birdLeader)
 	{
-		Debug.Log("starting conversation with" + dialogue.name);
+		Debug.Log("starting conversation with " + dialogue.name);
 
 		birdTarget = birdLeader;
 		playerController.SetTalking(true);
