@@ -6,17 +6,17 @@ using UnityEngine.AI;
 [RequireComponent(typeof(NavMeshAgent))]
 public class BirdController : MonoBehaviour
 {
-	CharacterController characterController;
-	public GameObject player;
-	private ThirdPersonMovement movementScript;
-	Vector3 destination;
-	public NavMeshAgent agent;
-
 	public bool IsRecruited = false;
-	[SerializeField] private float playerBufferDistance = 6.0f;
-
+	public NavMeshAgent agent;
 	[SerializeField] ParticleSystem collectParticles;
+
+	protected GameObject player;
+
+	[SerializeField] private float playerBufferDistance = 6.0f;
 	[SerializeField] private BirdLeaderController leader;
+	private CharacterController characterController;
+	private ThirdPersonMovement movementScript;
+	private Vector3 destination;
 
 	void Awake() => characterController = GetComponent<CharacterController>();
 
