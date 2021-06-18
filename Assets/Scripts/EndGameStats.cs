@@ -8,12 +8,19 @@ public class EndGameStats : MonoBehaviour
 {
 
 	[SerializeField] VarNumber timer;
-	[SerializeField] VarNumber beopleCounter;
 	[SerializeField] TextMeshProUGUI statsText;
+
+	private GameObject player;
+
+	void Start()
+	{
+		player = GameObject.FindGameObjectWithTag("Player");
+	}
 
 	// Update is called once per frame
 	void Update()
 	{
-		statsText.text = beopleCounter.currentNum.ToString() + " beople saved with " + timer.currentNum.ToString() + " seconds remaining";
+		int count = player.GetComponent<PlayerController>().RecruitedBeople.Count;
+		statsText.text = count.ToString() + " beople saved with " + timer.currentNum.ToString() + " seconds remaining";
 	}
 }
