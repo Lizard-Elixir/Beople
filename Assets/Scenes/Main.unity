@@ -10327,7 +10327,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d19f979577431941b702d5b0efac839, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  state: {fileID: 0}
+  state: {fileID: 11400000, guid: 40f52a55b11ee2b4c8c81e6293b26e25, type: 2}
   PauseGraphics: {fileID: 1471907426}
 --- !u!4 &884447233 stripped
 Transform:
@@ -16646,6 +16646,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2033621449481958068, guid: b33f331140ebc8d499a0ef75332941d2, type: 3}
+      propertyPath: dialogue.sentences.Array.data[8].isPlayer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2440663154015528670, guid: b33f331140ebc8d499a0ef75332941d2, type: 3}
       propertyPath: m_RootOrder
       value: 8
