@@ -5263,7 +5263,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerController: {fileID: 1182169623}
-  timer: {fileID: 11400000, guid: 40f52a55b11ee2b4c8c81e6293b26e25, type: 2}
+  state: {fileID: 11400000, guid: 40f52a55b11ee2b4c8c81e6293b26e25, type: 2}
 --- !u!4 &439354327
 Transform:
   m_ObjectHideFlags: 0
@@ -8138,6 +8138,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db61ad2c18c484645b3833459e76de3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  state: {fileID: 11400000, guid: 40f52a55b11ee2b4c8c81e6293b26e25, type: 2}
   birbRequirement: 80
 --- !u!1001 &706823205
 PrefabInstance:
@@ -14365,7 +14366,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81ca984241120854885296cf553538c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timer: {fileID: 11400000, guid: 40f52a55b11ee2b4c8c81e6293b26e25, type: 2}
+  state: {fileID: 11400000, guid: 40f52a55b11ee2b4c8c81e6293b26e25, type: 2}
   beopleText: {fileID: 1109597771}
   timerText: {fileID: 577339217}
 --- !u!114 &1147960254
@@ -17708,7 +17709,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   frostBeginTime: 45
   frostCompleteTime: 15
-  timer: {fileID: 11400000, guid: 40f52a55b11ee2b4c8c81e6293b26e25, type: 2}
+  state: {fileID: 11400000, guid: 40f52a55b11ee2b4c8c81e6293b26e25, type: 2}
 --- !u!114 &1335475925
 MonoBehaviour:
   m_ObjectHideFlags: 0

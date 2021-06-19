@@ -6,7 +6,6 @@ public class PlayerController : MonoBehaviour
 {
 	public bool Talking = false;
 
-	public HashSet<GameObject> RecruitedBeople = new HashSet<GameObject>();
 	private PauseControl pauseControl;
 	private SquawkController squawkController;
 

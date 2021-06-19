@@ -6,12 +6,12 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
 	public PlayerController playerController;
-	[SerializeField] private VarNumber timer;
+	[SerializeField] StateObject state;
 
 	// Start is called before the first frame update
 	void Start()
 	{
-		timer.currentNum = timer.startingNum;
+		state.timer.currentNum = state.timer.startingNum;
 		InvokeRepeating("timerTick", 0, 1);
 	}
 
@@ -22,8 +22,8 @@ public class GameManager : MonoBehaviour
 			return;
 		}
 
-		timer.currentNum -= 1;
-		if (timer.currentNum <= 0)
+		state.timer.currentNum -= 1;
+		if (state.timer.currentNum <= 0)
 		{
 			SceneManager.LoadScene("Lose Menu");
 		}

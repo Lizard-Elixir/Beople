@@ -8,10 +8,10 @@ public class ParkController : MonoBehaviour
 {
 	Collider parkCollider;
 	Vector3 playerPosition;
+	[SerializeField] StateObject state;
 
 	private GameObject player;
 	private TextMeshPro instructions;
-	private HashSet<GameObject> RecruitedBeople;
 	public int birbRequirement;
 
 	void Start()
@@ -21,7 +21,6 @@ public class ParkController : MonoBehaviour
 		playerPosition = player.transform.position;
 		instructions = transform.GetComponentInChildren<TextMeshPro>();
 		instructions.text = "";
-		RecruitedBeople = player.GetComponent<PlayerController>().RecruitedBeople;
 	}
 
 	void Update()
@@ -29,7 +28,7 @@ public class ParkController : MonoBehaviour
 		Vector3 pointCheck = new Vector3(player.transform.position.x, transform.position.y, player.transform.position.z);
 		if (parkCollider.bounds.Contains(pointCheck))
 		{
-			if (RecruitedBeople.Count >= birbRequirement)
+			if (state.RecruitedBeople.Count >= birbRequirement)
 			{
 				instructions.text = "Press \"E\" to fly away";
 			}
@@ -38,9 +37,7 @@ public class ParkController : MonoBehaviour
 				instructions.text = "You need " + birbRequirement.ToString() + " beople before you can fly away!";
 			}
 
-
-
-			if (Input.GetKeyDown(KeyCode.E) && RecruitedBeople.Count >= birbRequirement)
+			if (Input.GetKeyDown(KeyCode.E) && state.RecruitedBeople.Count >= birbRequirement)
 			{
 				SceneManager.LoadScene("Win Menu");
 			}
