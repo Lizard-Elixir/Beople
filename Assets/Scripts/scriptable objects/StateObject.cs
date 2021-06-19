@@ -11,12 +11,14 @@ public class StateObject : ScriptableObject
 	public bool gameIsPaused = false;
 }
 
+[System.Serializable]
 public class TimerState
 {
 	public float startingNum = 240;
 	public float currentNum = 240;
 }
 
+[System.Serializable]
 public class PlayerState
 {
 	public bool isTalking = false;
