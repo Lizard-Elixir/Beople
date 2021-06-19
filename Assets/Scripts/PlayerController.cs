@@ -4,22 +4,18 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-	public bool Talking = false;
-
-	public HashSet<GameObject> RecruitedBeople = new HashSet<GameObject>();
-	private PauseControl pauseControl;
+	[SerializeField] StateObject state;
 	private SquawkController squawkController;
 
 	// Start is called before the first frame update
 	void Start()
 	{
-		pauseControl = FindObjectOfType<PauseControl>();
 		squawkController = FindObjectOfType<SquawkController>();
 	}
 
 	void Update()
 	{
-		if (Input.GetKeyDown(KeyCode.Space) && !Talking && !pauseControl.gameIsPaused)
+		if (Input.GetKeyDown(KeyCode.Space) && !state.player.isTalking && !state.gameIsPaused)
 		{
 			squawkController.Squawk();
 		}
@@ -27,7 +23,6 @@ public class PlayerController : MonoBehaviour
 
 	public void SetTalking(bool isTalkingNow)
 	{
-		Talking = isTalkingNow;
+		state.player.isTalking = isTalkingNow;
 	}
-
 }

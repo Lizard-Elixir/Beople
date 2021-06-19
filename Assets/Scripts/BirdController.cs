@@ -9,6 +9,7 @@ public class BirdController : MonoBehaviour
 	public bool IsRecruited = false;
 	public NavMeshAgent agent;
 	[SerializeField] ParticleSystem collectParticles;
+	[SerializeField] StateObject state;
 
 	protected GameObject player;
 
@@ -49,7 +50,7 @@ public class BirdController : MonoBehaviour
 
 		IsRecruited = true;
 
-		player.GetComponent<PlayerController>().RecruitedBeople.Add(gameObject);
+		state.RecruitedBeople.Add(gameObject);
 		collectParticles.Play();
 
 		// Allow the player to pass through recruited beople

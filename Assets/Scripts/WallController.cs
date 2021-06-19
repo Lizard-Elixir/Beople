@@ -4,19 +4,14 @@ using UnityEngine;
 using TMPro;
 public class WallController : MonoBehaviour
 {
+	[SerializeField] StateObject state;
 	[SerializeField] float beopleRequirement = 5f;
 	[SerializeField] private TextMeshProUGUI requirementHUD;
 	[SerializeField] private GameObject breakParticles;
-	private HashSet<GameObject> RecruitedBeople;
-
-	private void Start()
-	{
-		RecruitedBeople = GameObject.FindWithTag("Player").GetComponent<PlayerController>().RecruitedBeople;
-	}
 
 	private void Update()
 	{
-		requirementHUD.text = RecruitedBeople.Count + "/" + beopleRequirement.ToString();
+		requirementHUD.text = state.RecruitedBeople.Count + "/" + beopleRequirement.ToString();
 	}
 
 	// for some reason OnCoillisionEnter isn't working?
@@ -25,7 +20,7 @@ public class WallController : MonoBehaviour
 	{
 		if (collision.gameObject.tag == "Player")
 		{
-			if (RecruitedBeople.Count >= beopleRequirement)
+			if (state.RecruitedBeople.Count >= beopleRequirement)
 			{
 				GameObject particles = Instantiate(breakParticles);
 				particles.transform.position = gameObject.transform.position;

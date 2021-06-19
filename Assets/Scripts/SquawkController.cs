@@ -8,7 +8,7 @@ public class SquawkController : MonoBehaviour
 	public float SquawkRadius = 12.5f;
 	public float SquawkDuration = 1f;
 	public float SquawkCooldown = 2f;
-	public HashSet<GameObject> RecruitedBeople = new HashSet<GameObject>();
+	[SerializeField] StateObject state;
 
 	private float LastSquawkTime;
 	private MeshRenderer meshRenderer;
@@ -40,7 +40,6 @@ public class SquawkController : MonoBehaviour
 		if (other.CompareTag("Berson"))
 		{
 			other.GetComponent<BirdController>().Recruit();
-			RecruitedBeople.Add(other.gameObject);
 		}
 
 		if (other.CompareTag("BersonLeader"))
@@ -80,7 +79,7 @@ public class SquawkController : MonoBehaviour
 
 	void HandleLeaderRecruitment(GameObject berson)
 	{
-		RecruitedBeople.Add(berson);
+		state.RecruitedBeople.Add(berson);
 		switch (berson.name)
 		{
 			case "ChickenLeader":

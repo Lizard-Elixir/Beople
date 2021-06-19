@@ -5263,7 +5263,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerController: {fileID: 1182169623}
-  timer: {fileID: 11400000, guid: 40f52a55b11ee2b4c8c81e6293b26e25, type: 2}
+  state: {fileID: 11400000, guid: 40f52a55b11ee2b4c8c81e6293b26e25, type: 2}
 --- !u!4 &439354327
 Transform:
   m_ObjectHideFlags: 0
@@ -8138,6 +8138,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db61ad2c18c484645b3833459e76de3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  state: {fileID: 11400000, guid: 40f52a55b11ee2b4c8c81e6293b26e25, type: 2}
   birbRequirement: 80
 --- !u!1001 &706823205
 PrefabInstance:
@@ -10326,7 +10327,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d19f979577431941b702d5b0efac839, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameIsPaused: 0
+  state: {fileID: 0}
   PauseGraphics: {fileID: 1471907426}
 --- !u!4 &884447233 stripped
 Transform:
@@ -14365,7 +14366,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81ca984241120854885296cf553538c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timer: {fileID: 11400000, guid: 40f52a55b11ee2b4c8c81e6293b26e25, type: 2}
+  state: {fileID: 11400000, guid: 40f52a55b11ee2b4c8c81e6293b26e25, type: 2}
   beopleText: {fileID: 1109597771}
   timerText: {fileID: 577339217}
 --- !u!114 &1147960254
@@ -15094,6 +15095,10 @@ PrefabInstance:
       propertyPath: speed
       value: 14
       objectReference: {fileID: 0}
+    - target: {fileID: 7511297808730203068, guid: 260ad1b717dc277438662e0d908e08b0, type: 3}
+      propertyPath: state
+      value: 
+      objectReference: {fileID: 11400000, guid: 40f52a55b11ee2b4c8c81e6293b26e25, type: 2}
     - target: {fileID: 7511297808730203070, guid: 260ad1b717dc277438662e0d908e08b0, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -15138,6 +15143,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7511297808730203071, guid: 260ad1b717dc277438662e0d908e08b0, type: 3}
+      propertyPath: state
+      value: 
+      objectReference: {fileID: 11400000, guid: 40f52a55b11ee2b4c8c81e6293b26e25, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 260ad1b717dc277438662e0d908e08b0, type: 3}
 --- !u!4 &1182169622 stripped
@@ -17708,7 +17717,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   frostBeginTime: 45
   frostCompleteTime: 15
-  timer: {fileID: 11400000, guid: 40f52a55b11ee2b4c8c81e6293b26e25, type: 2}
+  state: {fileID: 11400000, guid: 40f52a55b11ee2b4c8c81e6293b26e25, type: 2}
 --- !u!114 &1335475925
 MonoBehaviour:
   m_ObjectHideFlags: 0

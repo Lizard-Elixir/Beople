@@ -83,11 +83,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee69ec04fe3355d4a8185f6b2bfbaf60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
   IsRecruited: 0
-  playerBufferDistance: 6
-  recruitedBeopleVar: {fileID: 11400000, guid: 5520c82a3d0807a47ae5bfb8b2ed0d60, type: 2}
+  agent: {fileID: 0}
   collectParticles: {fileID: 2621743817464114818}
+  state: {fileID: 11400000, guid: 40f52a55b11ee2b4c8c81e6293b26e25, type: 2}
+  playerBufferDistance: 6
   leader: {fileID: 0}
 --- !u!1 &8597187419404964772
 GameObject:
