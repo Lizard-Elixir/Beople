@@ -10327,8 +10327,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d19f979577431941b702d5b0efac839, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  state: {fileID: 11400000, guid: 40f52a55b11ee2b4c8c81e6293b26e25, type: 2}
   PauseGraphics: {fileID: 1471907426}
+  Paused: {fileID: 11400000, guid: 4873fd9c6edf8984abdb3514d3b7578f, type: 2}
+  PausedChangedEvent: {fileID: 11400000, guid: e57c8be621e4af040b67f0f4169c1aee, type: 2}
 --- !u!4 &884447233 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4573059743590422630, guid: 04568b2393a7b38499611be32623a01d, type: 3}
