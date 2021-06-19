@@ -12,5 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e5a3a804661bbd408cca0efb6e045be, type: 3}
   m_Name: state
   m_EditorClassIdentifier: 
-  startingNum: 210
-  currentNum: 210
+  timer:
+    startingNum: 210
+    currentNum: 210
+  player:
+    isTalking: 0
+  gameIsPaused: 0

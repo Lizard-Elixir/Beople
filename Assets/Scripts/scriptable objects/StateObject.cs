@@ -14,8 +14,8 @@ public class StateObject : ScriptableObject
 [System.Serializable]
 public class TimerState
 {
-	public float startingNum = 240;
-	public float currentNum = 240;
+	public float startingNum = 210;
+	public float currentNum = 210;
 }
 
 [System.Serializable]
