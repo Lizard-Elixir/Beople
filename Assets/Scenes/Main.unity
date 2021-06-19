@@ -10327,7 +10327,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d19f979577431941b702d5b0efac839, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameIsPaused: 0
+  state: {fileID: 0}
   PauseGraphics: {fileID: 1471907426}
 --- !u!4 &884447233 stripped
 Transform:
@@ -15095,6 +15095,10 @@ PrefabInstance:
       propertyPath: speed
       value: 14
       objectReference: {fileID: 0}
+    - target: {fileID: 7511297808730203068, guid: 260ad1b717dc277438662e0d908e08b0, type: 3}
+      propertyPath: state
+      value: 
+      objectReference: {fileID: 11400000, guid: 40f52a55b11ee2b4c8c81e6293b26e25, type: 2}
     - target: {fileID: 7511297808730203070, guid: 260ad1b717dc277438662e0d908e08b0, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -15139,6 +15143,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7511297808730203071, guid: 260ad1b717dc277438662e0d908e08b0, type: 3}
+      propertyPath: state
+      value: 
+      objectReference: {fileID: 11400000, guid: 40f52a55b11ee2b4c8c81e6293b26e25, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 260ad1b717dc277438662e0d908e08b0, type: 3}
 --- !u!4 &1182169622 stripped

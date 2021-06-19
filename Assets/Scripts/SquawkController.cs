@@ -40,7 +40,6 @@ public class SquawkController : MonoBehaviour
 		if (other.CompareTag("Berson"))
 		{
 			other.GetComponent<BirdController>().Recruit();
-			state.RecruitedBeople.Add(other.gameObject);
 		}
 
 		if (other.CompareTag("BersonLeader"))

@@ -5,9 +5,8 @@ using EightDirectionalSpriteSystem;
 
 public class ThirdPersonMovement : MonoBehaviour
 {
+	[SerializeField] StateObject state;
 	public CharacterController controller;
-	public PlayerController playerController;
-	private PauseControl pauseControl;
 	public float speed = 6f;
 
 	private ActorBillboard Billboard;
@@ -15,14 +14,12 @@ public class ThirdPersonMovement : MonoBehaviour
 	void Start()
 	{
 		Billboard = GetComponentInChildren<ActorBillboard>();
-		playerController = GetComponentInParent<PlayerController>();
-		pauseControl = FindObjectOfType<PauseControl>();
 	}
 
 	// Update is called once per frame
 	void Update()
 	{
-		if (!playerController.Talking && !pauseControl.gameIsPaused)
+		if (!state.player.isTalking && !state.gameIsPaused)
 		{
 			float horizontal = Input.GetAxisRaw("Horizontal");
 			float vertical = Input.GetAxisRaw("Vertical");

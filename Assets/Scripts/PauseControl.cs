@@ -5,8 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class PauseControl : MonoBehaviour
 {
-	public bool gameIsPaused;
-
+	[SerializeField] StateObject state;
 	public GameObject PauseGraphics;
 	private AudioThemeManager audioThemeManager;
 
@@ -26,7 +25,7 @@ public class PauseControl : MonoBehaviour
 
 	public void TogglePause()
 	{
-		if (gameIsPaused)
+		if (state.gameIsPaused)
 		{
 			ResumeGame();
 		}
@@ -38,7 +37,7 @@ public class PauseControl : MonoBehaviour
 
 	public void PauseGame()
 	{
-		gameIsPaused = true;
+		state.gameIsPaused = true;
 		Time.timeScale = 0f;
 		PauseGraphics.SetActive(true);
 		audioThemeManager.PauseTheme();
@@ -47,7 +46,7 @@ public class PauseControl : MonoBehaviour
 
 	public void ResumeGame()
 	{
-		gameIsPaused = false;
+		state.gameIsPaused = false;
 		Time.timeScale = 1;
 		PauseGraphics.SetActive(false);
 		audioThemeManager.ResumeTheme();

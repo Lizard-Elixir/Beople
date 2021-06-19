@@ -17,7 +17,7 @@ public class GameManager : MonoBehaviour
 
 	void timerTick()
 	{
-		if (playerController.Talking)
+		if (state.player.isTalking)
 		{
 			return;
 		}

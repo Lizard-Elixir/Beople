@@ -363,6 +363,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc7efe8f7da3b2743b761709ca551f43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SquawkRadius: 12.5
+  SquawkDuration: 1
+  SquawkCooldown: 2
+  state: {fileID: 11400000, guid: 40f52a55b11ee2b4c8c81e6293b26e25, type: 2}
 --- !u!1 &7511297808730203043
 GameObject:
   m_ObjectHideFlags: 0
@@ -431,8 +435,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c400a8a650aaa214785ab230263e6dd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  state: {fileID: 0}
   controller: {fileID: 7511297808730203069}
-  playerController: {fileID: 7511297808730203071}
   speed: 14
 --- !u!114 &7511297808730203071
 MonoBehaviour:
@@ -446,10 +450,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 128fb3bce3404dd408a63eec6fd1083e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SquawkRadius: 12.5
-  SquawkCooldown: 2
-  Talking: 0
-  recruitedBeopleVar: {fileID: 11400000, guid: 5520c82a3d0807a47ae5bfb8b2ed0d60, type: 2}
+  state: {fileID: 0}
 --- !u!95 &1182169624
 Animator:
   serializedVersion: 3
@@ -481,5 +482,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d19f979577431941b702d5b0efac839, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameIsPaused: 0
+  state: {fileID: 0}
   PauseGraphics: {fileID: 0}
