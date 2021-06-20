@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: GamePaused
   m_EditorClassIdentifier: 
   _developerDescription: If the game is paused or not.
-  _id: 
-  _value: 0
+  _id: Paused
+  _value: 1
   _changed: {fileID: 11400000, guid: e57c8be621e4af040b67f0f4169c1aee, type: 2}
   _changedWithHistory: {fileID: 0}
-  _triggerChangedOnOnEnable: 1
+  _triggerChangedOnOnEnable: 0
   _triggerChangedWithHistoryOnOnEnable: 0
   _oldValue: 0
   _initialValue: 0

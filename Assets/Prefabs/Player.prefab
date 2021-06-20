@@ -380,7 +380,6 @@ GameObject:
   - component: {fileID: 7511297808730203068}
   - component: {fileID: 7511297808730203071}
   - component: {fileID: 1182169624}
-  - component: {fileID: 928533297}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -436,6 +435,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   state: {fileID: 0}
+  Paused: {fileID: 11400000, guid: 4873fd9c6edf8984abdb3514d3b7578f, type: 2}
   controller: {fileID: 7511297808730203069}
   speed: 14
 --- !u!114 &7511297808730203071
@@ -450,7 +450,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 128fb3bce3404dd408a63eec6fd1083e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  state: {fileID: 0}
+  state: {fileID: 11400000, guid: 40f52a55b11ee2b4c8c81e6293b26e25, type: 2}
+  Paused: {fileID: 11400000, guid: 4873fd9c6edf8984abdb3514d3b7578f, type: 2}
 --- !u!95 &1182169624
 Animator:
   serializedVersion: 3
@@ -470,17 +471,3 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &928533297
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7511297808730203043}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d19f979577431941b702d5b0efac839, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  state: {fileID: 0}
-  PauseGraphics: {fileID: 0}

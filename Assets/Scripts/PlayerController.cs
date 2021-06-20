@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityAtoms.BaseAtoms;
 
 public class PlayerController : MonoBehaviour
 {
 	[SerializeField] StateObject state;
+	[SerializeField] private BoolVariable Paused;
 	private SquawkController squawkController;
 
 	// Start is called before the first frame update
@@ -15,7 +17,7 @@ public class PlayerController : MonoBehaviour
 
 	void Update()
 	{
-		if (Input.GetKeyDown(KeyCode.Space) && !state.player.isTalking && !state.gameIsPaused)
+		if (Input.GetKeyDown(KeyCode.Space) && !state.player.isTalking && !Paused.Value)
 		{
 			squawkController.Squawk();
 		}

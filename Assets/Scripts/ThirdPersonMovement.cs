@@ -2,10 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using EightDirectionalSpriteSystem;
+using UnityAtoms.BaseAtoms;
 
 public class ThirdPersonMovement : MonoBehaviour
 {
 	[SerializeField] StateObject state;
+	[SerializeField] private BoolVariable Paused;
 	public CharacterController controller;
 	public float speed = 6f;
 
@@ -19,7 +21,7 @@ public class ThirdPersonMovement : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
-		if (!state.player.isTalking && !state.gameIsPaused)
+		if (!state.player.isTalking && !Paused.Value)
 		{
 			float horizontal = Input.GetAxisRaw("Horizontal");
 			float vertical = Input.GetAxisRaw("Vertical");

@@ -8,7 +8,6 @@ public class StateObject : ScriptableObject
 	public TimerState timer = new TimerState();
 	public PlayerState player = new PlayerState();
 	public HashSet<GameObject> RecruitedBeople = new HashSet<GameObject>();
-	public bool gameIsPaused = false;
 }
 
 [System.Serializable]
