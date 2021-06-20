@@ -1,7 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityAtoms.BaseAtoms;
 
 [RequireComponent(typeof(NavMeshAgent))]
 public class BirdController : MonoBehaviour
@@ -9,7 +8,7 @@ public class BirdController : MonoBehaviour
 	public bool IsRecruited = false;
 	public NavMeshAgent agent;
 	[SerializeField] ParticleSystem collectParticles;
-	[SerializeField] StateObject state;
+	[SerializeField] GameObjectValueList RecruitedBeople;
 
 	protected GameObject player;
 
@@ -50,7 +49,7 @@ public class BirdController : MonoBehaviour
 
 		IsRecruited = true;
 
-		state.RecruitedBeople.Add(gameObject);
+		RecruitedBeople.Add(gameObject);
 		collectParticles.Play();
 
 		// Allow the player to pass through recruited beople

@@ -367,6 +367,7 @@ MonoBehaviour:
   SquawkDuration: 1
   SquawkCooldown: 2
   state: {fileID: 11400000, guid: 40f52a55b11ee2b4c8c81e6293b26e25, type: 2}
+  RecruitedBeople: {fileID: 11400000, guid: 2e409a66bed3f7245b2a5db6c62433e3, type: 2}
 --- !u!1 &7511297808730203043
 GameObject:
   m_ObjectHideFlags: 0

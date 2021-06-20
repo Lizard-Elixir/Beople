@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityAtoms.BaseAtoms;
 
 public class SquawkController : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class SquawkController : MonoBehaviour
 	public float SquawkDuration = 1f;
 	public float SquawkCooldown = 2f;
 	[SerializeField] StateObject state;
+	[SerializeField] GameObjectValueList RecruitedBeople;
 
 	private float LastSquawkTime;
 	private MeshRenderer meshRenderer;
@@ -79,7 +81,7 @@ public class SquawkController : MonoBehaviour
 
 	void HandleLeaderRecruitment(GameObject berson)
 	{
-		state.RecruitedBeople.Add(berson);
+		RecruitedBeople.Add(berson);
 		switch (berson.name)
 		{
 			case "ChickenLeader":

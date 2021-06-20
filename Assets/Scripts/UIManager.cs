@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
+using UnityAtoms.BaseAtoms;
 
 public class UIManager : MonoBehaviour
 {
 
 	[SerializeField] StateObject state;
+	[SerializeField] GameObjectValueList RecruitedBeople;
 	[SerializeField] TextMeshProUGUI beopleText;
 	[SerializeField] TextMeshProUGUI timerText;
 
@@ -21,7 +23,7 @@ public class UIManager : MonoBehaviour
 		else
 		{
 			timerText.text = state.timer.currentNum.ToString();
-			beopleText.text = "Beople: " + state.RecruitedBeople.Count.ToString();
+			beopleText.text = "Beople: " + RecruitedBeople.Count.ToString();
 		}
 	}
 }

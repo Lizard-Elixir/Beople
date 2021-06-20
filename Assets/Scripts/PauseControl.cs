@@ -5,25 +5,13 @@ using UnityAtoms.BaseAtoms;
 public class PauseControl : MonoBehaviour
 {
 	public GameObject PauseGraphics;
-	[SerializeField]
-	private BoolVariable Paused;
-	[SerializeField]
-	private BoolEvent PausedChangedEvent;
+	[SerializeField] private BoolVariable Paused;
 	private AudioThemeManager audioThemeManager;
 
 	void Start()
 	{
 		PauseGraphics.SetActive(false);
 		audioThemeManager = FindObjectOfType<AudioThemeManager>();
-		PausedChangedEvent.Register(this.TogglePause);
-	}
-
-	void OnDestroy()
-	{
-		if (PausedChangedEvent)
-		{
-			PausedChangedEvent.Unregister(this.TogglePause);
-		}
 	}
 
 	void Update()
