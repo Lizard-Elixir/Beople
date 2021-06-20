@@ -15,7 +15,7 @@ MonoBehaviour:
   _developerDescription: How far the player's squawk reaches.
   _id: SquawkRadius
   _value: 12.5
-  _changed: {fileID: 0}
+  _changed: {fileID: 11400000, guid: 2856222678c60b841bb92d00028d55de, type: 2}
   _changedWithHistory: {fileID: 0}
   _triggerChangedOnOnEnable: 0
   _triggerChangedWithHistoryOnOnEnable: 0

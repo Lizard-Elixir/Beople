@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a52ef257dc24452785b714bb0ae0008, type: 3}
   m_Name: SquawkRadiusChangedEvent
   m_EditorClassIdentifier: 
-  _developerDescription: 
+  _developerDescription: The event fired when the player's squawk radius changes.
   _replayBufferSize: 1
   _inspectorRaiseValue: 0
