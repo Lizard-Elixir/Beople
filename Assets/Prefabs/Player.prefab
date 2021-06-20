@@ -363,11 +363,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc7efe8f7da3b2743b761709ca551f43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SquawkRadius: 12.5
-  SquawkDuration: 1
-  SquawkCooldown: 2
   RecruitedBeople: {fileID: 11400000, guid: 2e409a66bed3f7245b2a5db6c62433e3, type: 2}
   MoveSpeed: {fileID: 11400000, guid: a4dd160402a0e2a498f6884f9b46b05f, type: 2}
+  SquawkRadius: {fileID: 11400000, guid: a3eeaa18472a6304b88d1b35fbf03200, type: 2}
+  SquawkDuration: {fileID: 11400000, guid: 8b02299677444b140850bf12966370eb, type: 2}
+  SquawkCooldown: {fileID: 11400000, guid: aa0b343577f619141a60a3cd6961fc71, type: 2}
 --- !u!1 &7511297808730203043
 GameObject:
   m_ObjectHideFlags: 0

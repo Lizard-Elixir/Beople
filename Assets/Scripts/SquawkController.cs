@@ -6,11 +6,11 @@ using UnityAtoms.BaseAtoms;
 
 public class SquawkController : MonoBehaviour
 {
-	public float SquawkRadius = 12.5f;
-	public float SquawkDuration = 1f;
-	public float SquawkCooldown = 2f;
 	[SerializeField] GameObjectValueList RecruitedBeople;
 	[SerializeField] private FloatVariable MoveSpeed;
+	[SerializeField] private FloatVariable SquawkRadius;
+	[SerializeField] private FloatVariable SquawkDuration;
+	[SerializeField] private FloatVariable SquawkCooldown;
 
 	private float LastSquawkTime;
 	private MeshRenderer meshRenderer;
@@ -23,13 +23,13 @@ public class SquawkController : MonoBehaviour
 		meshRenderer.enabled = false;
 		sphereCollider = this.GetComponent<SphereCollider>();
 		sphereCollider.enabled = false;
-		SetSquawkRadius(SquawkRadius);
+		SetSquawkRadius(SquawkRadius.Value);
 	}
 
 	// Update is called once per frame
 	void Update()
 	{
-		if (Time.time - LastSquawkTime > SquawkDuration)
+		if (Time.time - LastSquawkTime > SquawkDuration.Value)
 		{
 			meshRenderer.enabled = false;
 			sphereCollider.enabled = false;
@@ -59,7 +59,7 @@ public class SquawkController : MonoBehaviour
 
 	public void SetSquawkRadius(float radius)
 	{
-		transform.localScale = new Vector3(SquawkRadius * 2, transform.localScale.y, SquawkRadius * 2);
+		transform.localScale = new Vector3(SquawkRadius.Value * 2, transform.localScale.y, SquawkRadius.Value * 2);
 	}
 
 	/**
@@ -68,7 +68,7 @@ public class SquawkController : MonoBehaviour
 	 */
 	public void Squawk()
 	{
-		if (Time.time - LastSquawkTime < SquawkCooldown)
+		if (Time.time - LastSquawkTime < SquawkCooldown.Value)
 		{
 			return;
 		}
@@ -85,13 +85,14 @@ public class SquawkController : MonoBehaviour
 		switch (berson.name)
 		{
 			case "ChickenLeader":
-				SquawkCooldown *= 0.75f;
+				SquawkCooldown.Value *= 0.75f;
 				break;
 			case "SparrowLeader":
 				MoveSpeed.Value *= 2f;
 				break;
 			case "MagpieLeader":
-				SetSquawkRadius(SquawkRadius *= 1.5f);
+				SquawkRadius.Value *= 1.5f;
+				SetSquawkRadius(SquawkRadius.Value);
 				break;
 		}
 	}
