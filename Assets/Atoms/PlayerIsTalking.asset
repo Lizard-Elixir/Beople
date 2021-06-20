@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 593b70f10d7bb41c78d42c7e8b6609da, type: 3}
-  m_Name: GamePaused
+  m_Name: PlayerIsTalking
   m_EditorClassIdentifier: 
-  _developerDescription: If the game is paused or not.
-  _id: GamePaused
+  _developerDescription: Whether or not the player is currently talking.
+  _id: PlayerIsTalking
   _value: 0
-  _changed: {fileID: 11400000, guid: e57c8be621e4af040b67f0f4169c1aee, type: 2}
+  _changed: {fileID: 0}
   _changedWithHistory: {fileID: 0}
   _triggerChangedOnOnEnable: 0
   _triggerChangedWithHistoryOnOnEnable: 0

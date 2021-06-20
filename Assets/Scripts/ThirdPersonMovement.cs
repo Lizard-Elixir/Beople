@@ -8,6 +8,7 @@ public class ThirdPersonMovement : MonoBehaviour
 {
 	[SerializeField] StateObject state;
 	[SerializeField] private BoolVariable Paused;
+	[SerializeField] private BoolVariable PlayerIsTalking;
 	public CharacterController controller;
 	public float speed = 6f;
 
@@ -21,7 +22,7 @@ public class ThirdPersonMovement : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
-		if (!state.player.isTalking && !Paused.Value)
+		if (!PlayerIsTalking.Value && !Paused.Value)
 		{
 			float horizontal = Input.GetAxisRaw("Horizontal");
 			float vertical = Input.GetAxisRaw("Vertical");

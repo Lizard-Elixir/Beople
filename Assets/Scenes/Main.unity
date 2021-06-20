@@ -5264,6 +5264,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerController: {fileID: 1182169623}
   state: {fileID: 11400000, guid: 40f52a55b11ee2b4c8c81e6293b26e25, type: 2}
+  PlayerIsTalking: {fileID: 11400000, guid: 675068e68211fab4488afe55ac417d06, type: 2}
 --- !u!4 &439354327
 Transform:
   m_ObjectHideFlags: 0
@@ -12346,7 +12347,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1030527589
 GameObject:
@@ -15103,7 +15104,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 40f52a55b11ee2b4c8c81e6293b26e25, type: 2}
     - target: {fileID: 7511297808730203070, guid: 260ad1b717dc277438662e0d908e08b0, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7511297808730203070, guid: 260ad1b717dc277438662e0d908e08b0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16342,7 +16343,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3469210242972003021, guid: c516646e55061a84aa5ac21ef92712a4, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3469210242972003021, guid: c516646e55061a84aa5ac21ef92712a4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16654,7 +16655,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2440663154015528670, guid: b33f331140ebc8d499a0ef75332941d2, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2440663154015528670, guid: b33f331140ebc8d499a0ef75332941d2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -23064,7 +23065,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a6ab7cbc45164d19b20476265c251c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _developerDescription: 
+  _developerDescription: asdf
   _unityEventResponse:
     m_PersistentCalls:
       m_Calls:
@@ -23082,7 +23083,7 @@ MonoBehaviour:
         m_CallState: 2
   _actionResponses: []
   _conditions: []
-  _operator: 0
+  _operator: 1
   _replayEventBufferOnRegister: 1
   _eventReference:
     _usage: 0
@@ -23102,7 +23103,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1834436521
 PrefabInstance:

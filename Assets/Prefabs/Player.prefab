@@ -437,6 +437,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: {fileID: 0}
   Paused: {fileID: 11400000, guid: 4873fd9c6edf8984abdb3514d3b7578f, type: 2}
+  PlayerIsTalking: {fileID: 11400000, guid: 675068e68211fab4488afe55ac417d06, type: 2}
   controller: {fileID: 7511297808730203069}
   speed: 14
 --- !u!114 &7511297808730203071
@@ -453,6 +454,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: {fileID: 11400000, guid: 40f52a55b11ee2b4c8c81e6293b26e25, type: 2}
   Paused: {fileID: 11400000, guid: 4873fd9c6edf8984abdb3514d3b7578f, type: 2}
+  PlayerIsTalking: {fileID: 11400000, guid: 675068e68211fab4488afe55ac417d06, type: 2}
 --- !u!95 &1182169624
 Animator:
   serializedVersion: 3

@@ -2,11 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityAtoms.BaseAtoms;
 
 public class GameManager : MonoBehaviour
 {
 	public PlayerController playerController;
 	[SerializeField] StateObject state;
+	[SerializeField] private BoolVariable PlayerIsTalking;
 
 	// Start is called before the first frame update
 	void Start()
@@ -17,7 +19,7 @@ public class GameManager : MonoBehaviour
 
 	void timerTick()
 	{
-		if (state.player.isTalking)
+		if (PlayerIsTalking.Value)
 		{
 			return;
 		}
