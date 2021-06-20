@@ -9,6 +9,7 @@ public class SquawkController : MonoBehaviour
 	[SerializeField] GameObjectValueList RecruitedBeople;
 	[SerializeField] private FloatVariable MoveSpeed;
 	[SerializeField] private FloatVariable SquawkRadius;
+	[SerializeField] private FloatEvent SquawkRadiusChanged;
 	[SerializeField] private FloatVariable SquawkDuration;
 	[SerializeField] private FloatVariable SquawkCooldown;
 
@@ -23,7 +24,14 @@ public class SquawkController : MonoBehaviour
 		meshRenderer.enabled = false;
 		sphereCollider = this.GetComponent<SphereCollider>();
 		sphereCollider.enabled = false;
+
 		SetSquawkRadius(SquawkRadius.Value);
+		SquawkRadiusChanged.Register(this.SetSquawkRadius);
+	}
+
+	void OnDestroy()
+	{
+		SquawkRadiusChanged.Unregister(this.SetSquawkRadius);
 	}
 
 	// Update is called once per frame
@@ -92,7 +100,6 @@ public class SquawkController : MonoBehaviour
 				break;
 			case "MagpieLeader":
 				SquawkRadius.Value *= 1.5f;
-				SetSquawkRadius(SquawkRadius.Value);
 				break;
 		}
 	}
