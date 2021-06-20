@@ -9,7 +9,6 @@ public class SquawkController : MonoBehaviour
 	public float SquawkRadius = 12.5f;
 	public float SquawkDuration = 1f;
 	public float SquawkCooldown = 2f;
-	[SerializeField] StateObject state;
 	[SerializeField] GameObjectValueList RecruitedBeople;
 
 	private float LastSquawkTime;

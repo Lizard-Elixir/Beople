@@ -6,7 +6,6 @@ using UnityAtoms.BaseAtoms;
 
 public class WallController : MonoBehaviour
 {
-	[SerializeField] StateObject state;
 	[SerializeField] float beopleRequirement = 5f;
 	[SerializeField] private TextMeshProUGUI requirementHUD;
 	[SerializeField] private GameObject breakParticles;

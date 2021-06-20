@@ -9,7 +9,6 @@ public class ParkController : MonoBehaviour
 {
 	Collider parkCollider;
 	Vector3 playerPosition;
-	[SerializeField] StateObject state;
 	[SerializeField] GameObjectValueList RecruitedBeople;
 
 	private GameObject player;

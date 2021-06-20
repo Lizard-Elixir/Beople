@@ -6,7 +6,6 @@ using UnityAtoms.BaseAtoms;
 
 public class ThirdPersonMovement : MonoBehaviour
 {
-	[SerializeField] StateObject state;
 	[SerializeField] private BoolVariable Paused;
 	[SerializeField] private BoolVariable PlayerIsTalking;
 	public CharacterController controller;

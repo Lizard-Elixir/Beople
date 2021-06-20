@@ -5,7 +5,6 @@ using UnityAtoms.BaseAtoms;
 
 public class PlayerController : MonoBehaviour
 {
-	[SerializeField] StateObject state;
 	[SerializeField] private BoolVariable Paused;
 	[SerializeField] private BoolVariable PlayerIsTalking;
 	private SquawkController squawkController;

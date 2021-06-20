@@ -7,7 +7,7 @@ using UnityAtoms.BaseAtoms;
 
 public class EndGameStats : MonoBehaviour
 {
-	[SerializeField] StateObject state;
+	[SerializeField] private FloatVariable Timer;
 	[SerializeField] GameObjectValueList RecruitedBeople;
 	[SerializeField] TextMeshProUGUI statsText;
 
@@ -15,7 +15,7 @@ public class EndGameStats : MonoBehaviour
 	void Update()
 	{
 		int count = RecruitedBeople.Count;
-		float time = state.timer.currentNum;
+		float time = Timer.Value;
 		statsText.text = count.ToString() + " beople saved with " + time.ToString() + " seconds remaining";
 	}
 }
