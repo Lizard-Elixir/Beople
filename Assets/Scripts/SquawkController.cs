@@ -10,6 +10,7 @@ public class SquawkController : MonoBehaviour
 	public float SquawkDuration = 1f;
 	public float SquawkCooldown = 2f;
 	[SerializeField] GameObjectValueList RecruitedBeople;
+	[SerializeField] private FloatVariable MoveSpeed;
 
 	private float LastSquawkTime;
 	private MeshRenderer meshRenderer;
@@ -87,16 +88,7 @@ public class SquawkController : MonoBehaviour
 				SquawkCooldown *= 0.75f;
 				break;
 			case "SparrowLeader":
-				ThirdPersonMovement movementScript = GetComponentInParent<ThirdPersonMovement>();
-				movementScript.speed *= 2f;
-				GameObject[] normalBersons = GameObject.FindGameObjectsWithTag("Berson");
-				GameObject[] leaderBersons = GameObject.FindGameObjectsWithTag("BersonLeader");
-				GameObject[] allBersons = normalBersons.Concat(leaderBersons).ToArray();
-				foreach (GameObject b in allBersons)
-				{
-					BirdController birdScript = b.GetComponent<BirdController>();
-					birdScript.agent.speed = movementScript.speed;
-				}
+				MoveSpeed.Value *= 2f;
 				break;
 			case "MagpieLeader":
 				SetSquawkRadius(SquawkRadius *= 1.5f);

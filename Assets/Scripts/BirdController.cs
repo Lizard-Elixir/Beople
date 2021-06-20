@@ -15,7 +15,8 @@ public class BirdController : MonoBehaviour
 	[SerializeField] private float playerBufferDistance = 6.0f;
 	[SerializeField] private BirdLeaderController leader;
 	private CharacterController characterController;
-	private ThirdPersonMovement movementScript;
+	[SerializeField] private FloatVariable MoveSpeed;
+	[SerializeField] private FloatEvent MoveSpeedChanged;
 	private Vector3 destination;
 
 	void Awake() => characterController = GetComponent<CharacterController>();
@@ -25,10 +26,16 @@ public class BirdController : MonoBehaviour
 		agent = GetComponent<NavMeshAgent>();
 		destination = agent.destination;
 		player = GameObject.FindWithTag("Player");
-		movementScript = player.GetComponent<ThirdPersonMovement>();
 
 		// Set initial movement speed to match player movement speed
-		agent.speed = movementScript.speed;
+		SetMoveSpeed(MoveSpeed.Value);
+
+		MoveSpeedChanged.Register(this.SetMoveSpeed);
+	}
+
+	void OnDestroy()
+	{
+		MoveSpeedChanged.Unregister(this.SetMoveSpeed);
 	}
 
 	// Update is called once per frame
@@ -38,6 +45,11 @@ public class BirdController : MonoBehaviour
 		{
 			MoveTowardsPlayer();
 		}
+	}
+
+	public void SetMoveSpeed(float newSpeed)
+	{
+		agent.speed = MoveSpeed.Value;
 	}
 
 	public bool Recruit()

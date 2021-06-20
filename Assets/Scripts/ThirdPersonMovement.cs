@@ -9,7 +9,7 @@ public class ThirdPersonMovement : MonoBehaviour
 	[SerializeField] private BoolVariable Paused;
 	[SerializeField] private BoolVariable PlayerIsTalking;
 	public CharacterController controller;
-	public float speed = 6f;
+	[SerializeField] private FloatVariable MoveSpeed;
 
 	private ActorBillboard Billboard;
 
@@ -31,7 +31,7 @@ public class ThirdPersonMovement : MonoBehaviour
 			{
 				float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg;
 				transform.rotation = Quaternion.Euler(0f, targetAngle, 0f);
-				controller.Move(direction * speed * Time.deltaTime);
+				controller.Move(direction * MoveSpeed.Value * Time.deltaTime);
 			}
 		}
 	}
