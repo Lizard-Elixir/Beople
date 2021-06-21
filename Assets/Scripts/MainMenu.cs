@@ -7,8 +7,9 @@ using UnityAtoms.BaseAtoms;
 public enum MainMenuPage
 {
 	Main,
+	Instructions,
 	Exposition,
-	Loading
+	Loading,
 }
 
 public class MainMenu : MonoBehaviour
@@ -25,7 +26,7 @@ public class MainMenu : MonoBehaviour
 
 	public void ShowInstructions()
 	{
-		Instructions.SetActive(true);
+		Page.SetValue(MainMenuPage.Instructions);
 	}
 
 	public void ShowIntroExposition()
@@ -54,11 +55,14 @@ public class MainMenu : MonoBehaviour
 	{
 		IntroExposition.SetActive(false);
 		LoadingScreen.SetActive(false);
-        Instructions.SetActive(false);
+		Instructions.SetActive(false);
 
 		switch (page)
 		{
 			case MainMenuPage.Main:
+				break;
+			case MainMenuPage.Instructions:
+				Instructions.SetActive(true);
 				break;
 			case MainMenuPage.Exposition:
 				IntroExposition.SetActive(true);
