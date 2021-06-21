@@ -16,27 +16,27 @@ MonoBehaviour:
     PublicKeyToken=null
   Namespace: 
   BaseType: MainMenuPage
-  GenerationOptions: 3097777
+  GenerationOptions: 4194303
   Scripts:
   - {fileID: 11500000, guid: aee8fea8920dca54e8158e68a0f96678, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11500000, guid: f91c0f0f61266ef4bbc0f360f987a651, type: 3}
+  - {fileID: 11500000, guid: 51849f1a118369648b14677893ac1efe, type: 3}
+  - {fileID: 11500000, guid: 89055d7e2767b4849a2d17ac4ee12c1d, type: 3}
   - {fileID: 11500000, guid: 426b09b7d077e914e9c2e12f33857371, type: 3}
   - {fileID: 11500000, guid: b3abbbc06b658a04ab31a38ac55caf92, type: 3}
-  - {fileID: 0}
+  - {fileID: 11500000, guid: adc1fda12f6c45b42a54827b94a6ef35, type: 3}
   - {fileID: 11500000, guid: 3056a323087233d4d8f930b1b5243d15, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11500000, guid: 8dd81e1c568b9a34fb7c4b5a5686e25f, type: 3}
+  - {fileID: 11500000, guid: c1bce23aae68d17459876caab89c1df4, type: 3}
   - {fileID: 11500000, guid: e6fcabdce7447f34990409c1f63c28a8, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11500000, guid: e86f2375a3c511340a7211caf06446fb, type: 3}
+  - {fileID: 11500000, guid: 4f58c376f0ecfae4b9055a2b34e03f76, type: 3}
+  - {fileID: 11500000, guid: a667fe2c3d0298d4983da9ca6c81206d, type: 3}
   - {fileID: 11500000, guid: 7ad0ea589ae661243885f3b934e00b52, type: 3}
-  - {fileID: 0}
+  - {fileID: 11500000, guid: 8885495fdd510f5428d411d37810a9c4, type: 3}
   - {fileID: 11500000, guid: 670aa1ed3feaa894e9849855494698e7, type: 3}
   - {fileID: 11500000, guid: c38ea74a8b1e482498faa90b4ad7c040, type: 3}
   - {fileID: 11500000, guid: a43801203a5f385479a65244285338f8, type: 3}
   - {fileID: 11500000, guid: eb660040c8682f14ea9cffd77e3702b0, type: 3}
-  - {fileID: 0}
+  - {fileID: 11500000, guid: 8d5ecf6badf20de4f8402823758ccdb4, type: 3}
   - {fileID: 11500000, guid: 9bbbe1df10c6b0443921fae34dda8a66, type: 3}
