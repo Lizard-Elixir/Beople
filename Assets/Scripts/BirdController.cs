@@ -1,7 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityAtoms.BaseAtoms;
 
 [RequireComponent(typeof(NavMeshAgent))]
 public class BirdController : MonoBehaviour
@@ -9,14 +8,15 @@ public class BirdController : MonoBehaviour
 	public bool IsRecruited = false;
 	public NavMeshAgent agent;
 	[SerializeField] ParticleSystem collectParticles;
-	[SerializeField] StateObject state;
+	[SerializeField] GameObjectValueList RecruitedBeople;
 
 	protected GameObject player;
 
 	[SerializeField] private float playerBufferDistance = 6.0f;
 	[SerializeField] private BirdLeaderController leader;
 	private CharacterController characterController;
-	private ThirdPersonMovement movementScript;
+	[SerializeField] private FloatVariable MoveSpeed;
+	[SerializeField] private FloatEvent MoveSpeedChanged;
 	private Vector3 destination;
 
 	void Awake() => characterController = GetComponent<CharacterController>();
@@ -26,10 +26,16 @@ public class BirdController : MonoBehaviour
 		agent = GetComponent<NavMeshAgent>();
 		destination = agent.destination;
 		player = GameObject.FindWithTag("Player");
-		movementScript = player.GetComponent<ThirdPersonMovement>();
 
 		// Set initial movement speed to match player movement speed
-		agent.speed = movementScript.speed;
+		SetMoveSpeed(MoveSpeed.Value);
+
+		MoveSpeedChanged.Register(this.SetMoveSpeed);
+	}
+
+	void OnDestroy()
+	{
+		MoveSpeedChanged.Unregister(this.SetMoveSpeed);
 	}
 
 	// Update is called once per frame
@@ -41,6 +47,11 @@ public class BirdController : MonoBehaviour
 		}
 	}
 
+	public void SetMoveSpeed(float newSpeed)
+	{
+		agent.speed = MoveSpeed.Value;
+	}
+
 	public bool Recruit()
 	{
 		if (IsRecruited || (!!leader && !leader.IsRecruited))
@@ -50,7 +61,7 @@ public class BirdController : MonoBehaviour
 
 		IsRecruited = true;
 
-		state.RecruitedBeople.Add(gameObject);
+		RecruitedBeople.Add(gameObject);
 		collectParticles.Play();
 
 		// Allow the player to pass through recruited beople

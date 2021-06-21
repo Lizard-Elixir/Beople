@@ -2,13 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityAtoms.BaseAtoms;
 
 public class SquawkController : MonoBehaviour
 {
-	public float SquawkRadius = 12.5f;
-	public float SquawkDuration = 1f;
-	public float SquawkCooldown = 2f;
-	[SerializeField] StateObject state;
+	[SerializeField] GameObjectValueList RecruitedBeople;
+	[SerializeField] private FloatVariable MoveSpeed;
+	[SerializeField] private FloatVariable SquawkRadius;
+	[SerializeField] private FloatEvent SquawkRadiusChanged;
+	[SerializeField] private FloatVariable SquawkDuration;
+	[SerializeField] private FloatVariable SquawkCooldown;
 
 	private float LastSquawkTime;
 	private MeshRenderer meshRenderer;
@@ -21,13 +24,20 @@ public class SquawkController : MonoBehaviour
 		meshRenderer.enabled = false;
 		sphereCollider = this.GetComponent<SphereCollider>();
 		sphereCollider.enabled = false;
-		SetSquawkRadius(SquawkRadius);
+
+		SetSquawkRadius(SquawkRadius.Value);
+		SquawkRadiusChanged.Register(this.SetSquawkRadius);
+	}
+
+	void OnDestroy()
+	{
+		SquawkRadiusChanged.Unregister(this.SetSquawkRadius);
 	}
 
 	// Update is called once per frame
 	void Update()
 	{
-		if (Time.time - LastSquawkTime > SquawkDuration)
+		if (Time.time - LastSquawkTime > SquawkDuration.Value)
 		{
 			meshRenderer.enabled = false;
 			sphereCollider.enabled = false;
@@ -57,7 +67,7 @@ public class SquawkController : MonoBehaviour
 
 	public void SetSquawkRadius(float radius)
 	{
-		transform.localScale = new Vector3(SquawkRadius * 2, transform.localScale.y, SquawkRadius * 2);
+		transform.localScale = new Vector3(SquawkRadius.Value * 2, transform.localScale.y, SquawkRadius.Value * 2);
 	}
 
 	/**
@@ -66,7 +76,7 @@ public class SquawkController : MonoBehaviour
 	 */
 	public void Squawk()
 	{
-		if (Time.time - LastSquawkTime < SquawkCooldown)
+		if (Time.time - LastSquawkTime < SquawkCooldown.Value)
 		{
 			return;
 		}
@@ -79,26 +89,17 @@ public class SquawkController : MonoBehaviour
 
 	void HandleLeaderRecruitment(GameObject berson)
 	{
-		state.RecruitedBeople.Add(berson);
+		RecruitedBeople.Add(berson);
 		switch (berson.name)
 		{
 			case "ChickenLeader":
-				SquawkCooldown *= 0.75f;
+				SquawkCooldown.Value *= 0.75f;
 				break;
 			case "SparrowLeader":
-				ThirdPersonMovement movementScript = GetComponentInParent<ThirdPersonMovement>();
-				movementScript.speed *= 2f;
-				GameObject[] normalBersons = GameObject.FindGameObjectsWithTag("Berson");
-				GameObject[] leaderBersons = GameObject.FindGameObjectsWithTag("BersonLeader");
-				GameObject[] allBersons = normalBersons.Concat(leaderBersons).ToArray();
-				foreach (GameObject b in allBersons)
-				{
-					BirdController birdScript = b.GetComponent<BirdController>();
-					birdScript.agent.speed = movementScript.speed;
-				}
+				MoveSpeed.Value *= 2f;
 				break;
 			case "MagpieLeader":
-				SetSquawkRadius(SquawkRadius *= 1.5f);
+				SquawkRadius.Value *= 1.5f;
 				break;
 		}
 	}

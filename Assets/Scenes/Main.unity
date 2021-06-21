@@ -5243,6 +5243,7 @@ GameObject:
   - component: {fileID: 439354327}
   - component: {fileID: 439354326}
   - component: {fileID: 439354328}
+  - component: {fileID: 439354329}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -5263,7 +5264,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerController: {fileID: 1182169623}
-  state: {fileID: 11400000, guid: 40f52a55b11ee2b4c8c81e6293b26e25, type: 2}
+  Timer: {fileID: 11400000, guid: 62189e9cd88efe94db1748365ec1ed54, type: 2}
+  PlayerIsTalking: {fileID: 11400000, guid: 675068e68211fab4488afe55ac417d06, type: 2}
 --- !u!4 &439354327
 Transform:
   m_ObjectHideFlags: 0
@@ -5295,6 +5297,44 @@ MonoBehaviour:
   blendDistance: 0
   weight: 1
   sharedProfile: {fileID: 11400000, guid: ec1bb4991df77d044a29bd46ce47d3d4, type: 2}
+--- !u!114 &439354329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 439354325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6ab7cbc45164d19b20476265c251c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _developerDescription: Handles pausing and unpausing the game.
+  _unityEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 873369059}
+        m_TargetAssemblyTypeName: PauseControl, Assembly-CSharp
+        m_MethodName: TogglePause
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _actionResponses: []
+  _conditions: []
+  _operator: 0
+  _replayEventBufferOnRegister: 1
+  _eventReference:
+    _usage: 0
+    _event: {fileID: 11400000, guid: e57c8be621e4af040b67f0f4169c1aee, type: 2}
+    _eventInstancer: {fileID: 0}
+    _variable: {fileID: 0}
+    _variableInstancer: {fileID: 0}
 --- !u!4 &444700184 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3253018110860198202, guid: 54cd529ad1f5f1a41afc141a02f059a5, type: 3}
@@ -8138,7 +8178,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db61ad2c18c484645b3833459e76de3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  state: {fileID: 11400000, guid: 40f52a55b11ee2b4c8c81e6293b26e25, type: 2}
+  RecruitedBeople: {fileID: 11400000, guid: 2e409a66bed3f7245b2a5db6c62433e3, type: 2}
   birbRequirement: 80
 --- !u!1001 &706823205
 PrefabInstance:
@@ -10327,8 +10367,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d19f979577431941b702d5b0efac839, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  state: {fileID: 11400000, guid: 40f52a55b11ee2b4c8c81e6293b26e25, type: 2}
   PauseGraphics: {fileID: 1471907426}
+  Paused: {fileID: 11400000, guid: 4873fd9c6edf8984abdb3514d3b7578f, type: 2}
 --- !u!4 &884447233 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4573059743590422630, guid: 04568b2393a7b38499611be32623a01d, type: 3}
@@ -14366,7 +14406,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81ca984241120854885296cf553538c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  state: {fileID: 11400000, guid: 40f52a55b11ee2b4c8c81e6293b26e25, type: 2}
+  Timer: {fileID: 11400000, guid: 62189e9cd88efe94db1748365ec1ed54, type: 2}
+  RecruitedBeople: {fileID: 11400000, guid: 2e409a66bed3f7245b2a5db6c62433e3, type: 2}
   beopleText: {fileID: 1109597771}
   timerText: {fileID: 577339217}
 --- !u!114 &1147960254
@@ -17721,7 +17762,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   frostBeginTime: 45
   frostCompleteTime: 15
-  state: {fileID: 11400000, guid: 40f52a55b11ee2b4c8c81e6293b26e25, type: 2}
+  Timer: {fileID: 11400000, guid: 62189e9cd88efe94db1748365ec1ed54, type: 2}
 --- !u!114 &1335475925
 MonoBehaviour:
   m_ObjectHideFlags: 0

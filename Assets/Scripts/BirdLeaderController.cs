@@ -1,17 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityAtoms.BaseAtoms;
 
 public class BirdLeaderController : BirdController
 {
 	public Dialogue dialogue;
 	private SquawkController SquawkController;
 	private GameObject SpeechBubble;
+	[SerializeField] private FloatVariable SquawkRadius;
 
 	new void Start()
 	{
 		base.Start();
-		SquawkController = player.transform.Find("Squawk").gameObject.GetComponent<SquawkController>();
 		SpeechBubble = transform.Find("GFX").transform.Find("SpeechBubble").gameObject;
 	}
 
@@ -25,7 +26,7 @@ public class BirdLeaderController : BirdController
 		else
 		{
 			float distanceFromPlayer = Vector3.Distance(transform.position, player.transform.position);
-			if (distanceFromPlayer <= SquawkController.SquawkRadius)
+			if (distanceFromPlayer <= SquawkRadius.Value)
 			{
 				ShowSpeechBubble();
 			}

@@ -2,27 +2,34 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityAtoms.BaseAtoms;
+
+public enum MainMenuPage
+{
+	Main,
+	Exposition,
+	Loading
+}
 
 public class MainMenu : MonoBehaviour
 {
+	[SerializeField] private MainMenuPageVariable Page;
 	public GameObject IntroExposition;
 	public GameObject LoadingScreen;
 
 	public void Start()
 	{
-		IntroExposition.SetActive(false);
-		LoadingScreen.SetActive(false);
+		ShowMainMenu();
 	}
 
 	public void ShowIntroExposition()
 	{
-		IntroExposition.SetActive(true);
+		Page.SetValue(MainMenuPage.Exposition);
 	}
 
 	public void PlayGame()
 	{
-		LoadingScreen.SetActive(true);
-		IntroExposition.SetActive(false);
+		Page.SetValue(MainMenuPage.Loading);
 		SceneManager.LoadScene("Main");
 	}
 
@@ -34,6 +41,24 @@ public class MainMenu : MonoBehaviour
 
 	public void ShowMainMenu()
 	{
-		SceneManager.LoadScene("Main Menu");
+		Page.SetValue(MainMenuPage.Main);
+	}
+
+	public void SetMenuPage(MainMenuPage page)
+	{
+		IntroExposition.SetActive(false);
+		LoadingScreen.SetActive(false);
+
+		switch (page)
+		{
+			case MainMenuPage.Main:
+				break;
+			case MainMenuPage.Exposition:
+				IntroExposition.SetActive(true);
+				break;
+			case MainMenuPage.Loading:
+				LoadingScreen.SetActive(true);
+				break;
+		}
 	}
 }

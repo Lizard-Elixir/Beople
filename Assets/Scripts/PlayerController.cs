@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityAtoms.BaseAtoms;
 
 public class PlayerController : MonoBehaviour
 {
-	[SerializeField] StateObject state;
+	[SerializeField] private BoolVariable Paused;
+	[SerializeField] private BoolVariable PlayerIsTalking;
 	private SquawkController squawkController;
 
 	// Start is called before the first frame update
@@ -15,7 +17,7 @@ public class PlayerController : MonoBehaviour
 
 	void Update()
 	{
-		if (Input.GetKeyDown(KeyCode.Space) && !state.player.isTalking && !state.gameIsPaused)
+		if (Input.GetKeyDown(KeyCode.Space) && !PlayerIsTalking.Value && !Paused.Value)
 		{
 			squawkController.Squawk();
 		}
@@ -23,6 +25,6 @@ public class PlayerController : MonoBehaviour
 
 	public void SetTalking(bool isTalkingNow)
 	{
-		state.player.isTalking = isTalkingNow;
+		PlayerIsTalking.Value = isTalkingNow;
 	}
 }

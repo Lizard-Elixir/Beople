@@ -2,16 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityAtoms.BaseAtoms;
+
 public class WallController : MonoBehaviour
 {
-	[SerializeField] StateObject state;
 	[SerializeField] float beopleRequirement = 5f;
 	[SerializeField] private TextMeshProUGUI requirementHUD;
 	[SerializeField] private GameObject breakParticles;
+	[SerializeField] GameObjectValueList RecruitedBeople;
 
 	private void Update()
 	{
-		requirementHUD.text = state.RecruitedBeople.Count + "/" + beopleRequirement.ToString();
+		requirementHUD.text = RecruitedBeople.Count + "/" + beopleRequirement.ToString();
 	}
 
 	// for some reason OnCoillisionEnter isn't working?
@@ -20,7 +22,7 @@ public class WallController : MonoBehaviour
 	{
 		if (collision.gameObject.tag == "Player")
 		{
-			if (state.RecruitedBeople.Count >= beopleRequirement)
+			if (RecruitedBeople.Count >= beopleRequirement)
 			{
 				GameObject particles = Instantiate(breakParticles);
 				particles.transform.position = gameObject.transform.position;

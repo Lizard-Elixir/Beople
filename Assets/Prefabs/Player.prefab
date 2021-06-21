@@ -363,10 +363,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc7efe8f7da3b2743b761709ca551f43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SquawkRadius: 12.5
-  SquawkDuration: 1
-  SquawkCooldown: 2
-  state: {fileID: 11400000, guid: 40f52a55b11ee2b4c8c81e6293b26e25, type: 2}
+  RecruitedBeople: {fileID: 11400000, guid: 2e409a66bed3f7245b2a5db6c62433e3, type: 2}
+  MoveSpeed: {fileID: 11400000, guid: a4dd160402a0e2a498f6884f9b46b05f, type: 2}
+  SquawkRadius: {fileID: 11400000, guid: a3eeaa18472a6304b88d1b35fbf03200, type: 2}
+  SquawkRadiusChanged: {fileID: 11400000, guid: 2856222678c60b841bb92d00028d55de, type: 2}
+  SquawkDuration: {fileID: 11400000, guid: 8b02299677444b140850bf12966370eb, type: 2}
+  SquawkCooldown: {fileID: 11400000, guid: aa0b343577f619141a60a3cd6961fc71, type: 2}
 --- !u!1 &7511297808730203043
 GameObject:
   m_ObjectHideFlags: 0
@@ -380,7 +382,6 @@ GameObject:
   - component: {fileID: 7511297808730203068}
   - component: {fileID: 7511297808730203071}
   - component: {fileID: 1182169624}
-  - component: {fileID: 928533297}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -435,9 +436,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c400a8a650aaa214785ab230263e6dd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  state: {fileID: 0}
+  Paused: {fileID: 11400000, guid: 4873fd9c6edf8984abdb3514d3b7578f, type: 2}
+  PlayerIsTalking: {fileID: 11400000, guid: 675068e68211fab4488afe55ac417d06, type: 2}
   controller: {fileID: 7511297808730203069}
-  speed: 14
+  MoveSpeed: {fileID: 11400000, guid: a4dd160402a0e2a498f6884f9b46b05f, type: 2}
 --- !u!114 &7511297808730203071
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -450,7 +452,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 128fb3bce3404dd408a63eec6fd1083e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  state: {fileID: 0}
+  Paused: {fileID: 11400000, guid: 4873fd9c6edf8984abdb3514d3b7578f, type: 2}
+  PlayerIsTalking: {fileID: 11400000, guid: 675068e68211fab4488afe55ac417d06, type: 2}
 --- !u!95 &1182169624
 Animator:
   serializedVersion: 3
@@ -470,17 +473,3 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &928533297
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7511297808730203043}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d19f979577431941b702d5b0efac839, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  state: {fileID: 0}
-  PauseGraphics: {fileID: 0}

@@ -86,9 +86,11 @@ MonoBehaviour:
   IsRecruited: 0
   agent: {fileID: 0}
   collectParticles: {fileID: 937261920791266029}
-  state: {fileID: 11400000, guid: 40f52a55b11ee2b4c8c81e6293b26e25, type: 2}
+  RecruitedBeople: {fileID: 11400000, guid: 2e409a66bed3f7245b2a5db6c62433e3, type: 2}
   playerBufferDistance: 6
   leader: {fileID: 0}
+  MoveSpeed: {fileID: 11400000, guid: a4dd160402a0e2a498f6884f9b46b05f, type: 2}
+  MoveSpeedChanged: {fileID: 11400000, guid: 118e82621403894408c982ef38582491, type: 2}
 --- !u!1 &7938614910808954686
 GameObject:
   m_ObjectHideFlags: 0

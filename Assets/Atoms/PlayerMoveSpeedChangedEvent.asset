@@ -9,12 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e5a3a804661bbd408cca0efb6e045be, type: 3}
-  m_Name: state
+  m_Script: {fileID: 11500000, guid: 1a52ef257dc24452785b714bb0ae0008, type: 3}
+  m_Name: PlayerMoveSpeedChangedEvent
   m_EditorClassIdentifier: 
-  timer:
-    startingNum: 210
-    currentNum: 210
-  player:
-    isTalking: 0
-  gameIsPaused: 0
+  _developerDescription: The event fired when the player's movement speed changes.
+  _replayBufferSize: 1
+  _inspectorRaiseValue: 0

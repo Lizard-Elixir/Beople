@@ -1197,6 +1197,7 @@ GameObject:
   - component: {fileID: 1772452459}
   - component: {fileID: 1772452458}
   - component: {fileID: 1772452457}
+  - component: {fileID: 1772452462}
   m_Layer: 5
   m_Name: Main Menu
   m_TagString: Untagged
@@ -1216,6 +1217,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce0e089fcee40e240a748d2bfddb1f92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Page: {fileID: 11400000, guid: 85be03244d83f824b9e68787eb0f9289, type: 2}
   IntroExposition: {fileID: 804166043}
   LoadingScreen: {fileID: 1351230922}
 --- !u!114 &1772452458
@@ -1303,6 +1305,44 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1772452462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1772452456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3056a323087233d4d8f930b1b5243d15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _developerDescription: 
+  _unityEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1772452457}
+        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_MethodName: SetMenuPage
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _actionResponses: []
+  _conditions: []
+  _operator: 0
+  _replayEventBufferOnRegister: 1
+  _eventReference:
+    _usage: 0
+    _event: {fileID: 11400000, guid: 5cf6161f4b7e2324196e1725101cf791, type: 2}
+    _eventInstancer: {fileID: 0}
+    _variable: {fileID: 0}
+    _variableInstancer: {fileID: 0}
 --- !u!1 &1989501163
 GameObject:
   m_ObjectHideFlags: 0

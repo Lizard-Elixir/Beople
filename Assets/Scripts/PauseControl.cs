@@ -1,12 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityAtoms.BaseAtoms;
 
 public class PauseControl : MonoBehaviour
 {
-	[SerializeField] StateObject state;
 	public GameObject PauseGraphics;
+	[SerializeField] private BoolVariable Paused;
 	private AudioThemeManager audioThemeManager;
 
 	void Start()
@@ -17,40 +16,38 @@ public class PauseControl : MonoBehaviour
 
 	void Update()
 	{
-		if (Input.GetKeyDown(KeyCode.Escape))
+		if (Input.GetKeyDown(KeyCode.Escape) && Paused)
 		{
-			TogglePause();
+			Paused.Value = !Paused.Value;
 		}
 	}
 
-	public void TogglePause()
+	public void TogglePause(bool pause)
 	{
-		if (state.gameIsPaused)
+		if (pause)
 		{
-			ResumeGame();
+			Time.timeScale = 0f;
+			PauseGraphics.SetActive(true);
+			audioThemeManager.PauseTheme();
+			Input.ResetInputAxes();
 		}
 		else
 		{
-			PauseGame();
+			Time.timeScale = 1;
+			PauseGraphics.SetActive(false);
+			audioThemeManager.ResumeTheme();
+			Input.ResetInputAxes();
 		}
 	}
 
 	public void PauseGame()
 	{
-		state.gameIsPaused = true;
-		Time.timeScale = 0f;
-		PauseGraphics.SetActive(true);
-		audioThemeManager.PauseTheme();
-		Input.ResetInputAxes();
+		Paused.Value = true;
 	}
 
 	public void ResumeGame()
 	{
-		state.gameIsPaused = false;
-		Time.timeScale = 1;
-		PauseGraphics.SetActive(false);
-		audioThemeManager.ResumeTheme();
-		Input.ResetInputAxes();
+		Paused.Value = false;
 	}
 
 	public void GoToMainMenu()
