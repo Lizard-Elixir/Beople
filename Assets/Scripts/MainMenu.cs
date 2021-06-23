@@ -7,14 +7,16 @@ using UnityAtoms.BaseAtoms;
 public enum MainMenuPage
 {
 	Main,
-	Instructions,
+	Options,
 	Exposition,
+	Instructions,
 	Loading,
 }
 
 public class MainMenu : MonoBehaviour
 {
 	[SerializeField] private MainMenuPageVariable Page;
+	public GameObject Options;
 	public GameObject Instructions;
 	public GameObject IntroExposition;
 	public GameObject LoadingScreen;
@@ -22,6 +24,11 @@ public class MainMenu : MonoBehaviour
 	public void Start()
 	{
 		ShowMainMenu();
+	}
+
+	public void ShowOptions()
+	{
+		Page.SetValue(MainMenuPage.Options);
 	}
 
 	public void ShowInstructions()
@@ -53,6 +60,7 @@ public class MainMenu : MonoBehaviour
 
 	public void SetMenuPage(MainMenuPage page)
 	{
+		Options.SetActive(false);
 		IntroExposition.SetActive(false);
 		LoadingScreen.SetActive(false);
 		Instructions.SetActive(false);
@@ -60,6 +68,9 @@ public class MainMenu : MonoBehaviour
 		switch (page)
 		{
 			case MainMenuPage.Main:
+				break;
+			case MainMenuPage.Options:
+				Options.SetActive(true);
 				break;
 			case MainMenuPage.Instructions:
 				Instructions.SetActive(true);

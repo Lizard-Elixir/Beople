@@ -572,7 +572,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2071082607}
-        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_TargetAssemblyTypeName: WinMenu, Assembly-CSharp
         m_MethodName: QuitGame
         m_Mode: 1
         m_Arguments:
@@ -766,7 +766,7 @@ GameObject:
   - component: {fileID: 1723090986}
   - component: {fileID: 1723090985}
   m_Layer: 0
-  m_Name: bad ending
+  m_Name: good ending
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -781,7 +781,7 @@ AudioSource:
   m_GameObject: {fileID: 1723090984}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 8bb5d8eecaf76174c94dd4d98ad05a28, type: 2}
   m_audioClip: {fileID: 8300000, guid: a4fac1ef1037b9d4284a5e4ff51f9105, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -1058,7 +1058,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2071082607}
-        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_TargetAssemblyTypeName: WinMenu, Assembly-CSharp
         m_MethodName: ShowMainMenu
         m_Mode: 1
         m_Arguments:
@@ -1119,8 +1119,8 @@ GameObject:
   - component: {fileID: 2071082610}
   - component: {fileID: 2071082609}
   - component: {fileID: 2071082608}
-  - component: {fileID: 2071082607}
   - component: {fileID: 2071082612}
+  - component: {fileID: 2071082607}
   m_Layer: 5
   m_Name: Win Menu
   m_TagString: Untagged
@@ -1137,11 +1137,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 2071082606}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce0e089fcee40e240a748d2bfddb1f92, type: 3}
+  m_Script: {fileID: 11500000, guid: d798924b348c5974a92c067e6138803b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IntroExposition: {fileID: 0}
-  LoadingScreen: {fileID: 0}
 --- !u!114 &2071082608
 MonoBehaviour:
   m_ObjectHideFlags: 0
