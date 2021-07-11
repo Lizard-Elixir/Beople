@@ -7,11 +7,12 @@ namespace EightDirectionalSpriteSystem
 	[ExecuteInEditMode]
 	public class BersonActor : MonoBehaviour
 	{
-		public enum State { NONE, IDLE };
+		public enum State { NONE, IDLE, SQUAWKING };
 
 		public ActorBillboard actorBillboard;
 
 		public ActorAnimation idleAnim;
+		public ActorAnimation squawkAnim;
 
 		private Transform myTransform;
 		private ActorAnimation currentAnimation = null;
@@ -51,6 +52,9 @@ namespace EightDirectionalSpriteSystem
 			currentState = newState;
 			switch (currentState)
 			{
+				case (State.SQUAWKING):
+					currentAnimation = squawkAnim;
+					break;
 				default:
 					currentAnimation = idleAnim;
 					break;

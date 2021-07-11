@@ -141,6 +141,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   actorBillboard: {fileID: 295875141122373696}
   idleAnim: {fileID: 11400000, guid: 4877db5529ad65a43877b64715ce287c, type: 2}
+  squawkAnim: {fileID: 11400000, guid: 60a56d027d889ae429d93d9f3a9fa1ed, type: 2}
 --- !u!1 &7511297808107989555
 GameObject:
   m_ObjectHideFlags: 0
@@ -364,6 +365,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RecruitedBeople: {fileID: 11400000, guid: 2e409a66bed3f7245b2a5db6c62433e3, type: 2}
+  actorBillboard: {fileID: 295875141122373696}
+  bersonActor: {fileID: 4629626418894708481}
   MoveSpeed: {fileID: 11400000, guid: a4dd160402a0e2a498f6884f9b46b05f, type: 2}
   SquawkRadius: {fileID: 11400000, guid: a3eeaa18472a6304b88d1b35fbf03200, type: 2}
   SquawkRadiusChanged: {fileID: 11400000, guid: 2856222678c60b841bb92d00028d55de, type: 2}

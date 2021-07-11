@@ -7,6 +7,8 @@ using UnityAtoms.BaseAtoms;
 public class SquawkController : MonoBehaviour
 {
 	[SerializeField] GameObjectValueList RecruitedBeople;
+	public EightDirectionalSpriteSystem.ActorBillboard actorBillboard;
+	public EightDirectionalSpriteSystem.BersonActor bersonActor;
 	[SerializeField] private FloatVariable MoveSpeed;
 	[SerializeField] private FloatVariable SquawkRadius;
 	[SerializeField] private FloatEvent SquawkRadiusChanged;
@@ -39,8 +41,7 @@ public class SquawkController : MonoBehaviour
 	{
 		if (Time.time - LastSquawkTime > SquawkDuration.Value)
 		{
-			meshRenderer.enabled = false;
-			sphereCollider.enabled = false;
+			StopSquawking();
 		}
 	}
 
@@ -84,7 +85,15 @@ public class SquawkController : MonoBehaviour
 		meshRenderer.enabled = true;
 		sphereCollider.enabled = true;
 		GetComponent<AudioSource>().Play();
+		actorBillboard.PlayAnimation(bersonActor.squawkAnim);
 		LastSquawkTime = Time.time;
+	}
+
+	public void StopSquawking()
+	{
+		meshRenderer.enabled = false;
+		sphereCollider.enabled = false;
+		actorBillboard.PlayAnimation(bersonActor.idleAnim);
 	}
 
 	void HandleLeaderRecruitment(GameObject berson)
