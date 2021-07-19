@@ -19,10 +19,10 @@ MonoBehaviour:
   frameList:
   - sprites:
     - {fileID: 21300000, guid: 61b268a32793d74458540caa731c362a, type: 3}
+    - {fileID: 21300000, guid: d3308fe8c509e1d40903547d53de171c, type: 3}
     - {fileID: 21300000, guid: 15d2b1174227d1e498f8cda9dca28ef3, type: 3}
-    - {fileID: 21300000, guid: 15d2b1174227d1e498f8cda9dca28ef3, type: 3}
-    - {fileID: 21300000, guid: 15d2b1174227d1e498f8cda9dca28ef3, type: 3}
+    - {fileID: 21300000, guid: f04a11e79f28bba48af422e220ff4d35, type: 3}
     - {fileID: 21300000, guid: 9904c9f634949974c94081fd66ad07e4, type: 3}
+    - {fileID: 21300000, guid: 4d558e874598f6a48a9fa0472977ba2b, type: 3}
     - {fileID: 21300000, guid: 57a2f14a63b963545974c86cd0022824, type: 3}
-    - {fileID: 21300000, guid: 57a2f14a63b963545974c86cd0022824, type: 3}
-    - {fileID: 21300000, guid: 57a2f14a63b963545974c86cd0022824, type: 3}
+    - {fileID: 21300000, guid: fef58b1658ba9ca478849853a0a076b9, type: 3}
